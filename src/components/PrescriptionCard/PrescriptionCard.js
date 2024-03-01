@@ -1,21 +1,20 @@
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView, View, TouchableOpacity, TouchableWithoutFeedback, Image } from 'react-native';
-import styles from "./FavDrugCard.style"
+import styles from "./PrescriptionCard.style"
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useState } from 'react';
 import { UseSelector } from 'react-redux';
-
 import { UseDispatch, useDispatch } from 'react-redux';
 import colors from '../../colors';
 
 
-const FavDrugCard = ({ data, onPress }) => {
+const PrescriptionCard = ({ data, onPress }) => {
 
     const dispatch = useDispatch();
 
-    const handleRemoveFav = () => {
-        dispatch({ type: "REMOVE_FAV", payload: { drug: data } });
+    const handleRemovePres = () => {
+        dispatch({ type: "REMOVE_PRESCRIPTION", payload: { drug: data } });
     }
 
     return (
@@ -25,7 +24,7 @@ const FavDrugCard = ({ data, onPress }) => {
                     <Text style={styles.title} numberOfLines={2}>{data}</Text>
                 </SafeAreaView>
                 <SafeAreaView style={styles.trash_container}>
-                    <TouchableOpacity onPress={handleRemoveFav}>
+                    <TouchableOpacity onPress={handleRemovePres}>
                     <Image style={{height: 28, width: 28, alignItems: 'center', tintColor: colors.primaryColor}} source={require("../../../assets/icons/trash.png")} />
                     </TouchableOpacity>
                 </SafeAreaView>
@@ -35,4 +34,4 @@ const FavDrugCard = ({ data, onPress }) => {
 
 }
 
-export default FavDrugCard;
+export default PrescriptionCard;

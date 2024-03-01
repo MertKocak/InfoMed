@@ -76,7 +76,35 @@ const HomePage = ({ route, navigation }) => {
                         <HomeCard title={"Semptom"} desc={"Sahip olduğunuz belirtileri aratarak ilaç önerisi alabilirsiniz"} imgPath={"3"} onPress={() => onPressButton("IndicationPage")}></HomeCard>
                         <HomeCard title={"Muadil İlaç"} desc={"Girmiş olduğunuz ilaca eşdeğer ilaç önerisi alabilirsiniz"} imgPath={"5"} onPress={() => onPressButton("EquivalentPage")}></HomeCard>
                     </View>
-                    
+                    <TouchableOpacity onPress={() => onPressButton("PrescriptionPage")}>
+                        <View style={{
+                            width: (windowWidth - 24),
+                            height: 80, backgroundColor: colors.secondaryColor, margin: 12, marginBottom: 0, borderRadius: 8, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row',
+                        }}>
+                            <View style={{ flexDirection: 'column', justifyContent: 'center' }}>
+                                <Text style={{
+                                    color: colors.primaryColor,
+                                    fontSize: 14, paddingLeft: 12,
+                                    fontFamily: 'Raleway-Bold',
+                                }}>Reçetem</Text>
+                                <Text style={{
+                                    color: colors.primaryColor,
+                                    fontSize: 12,
+                                    paddingLeft: 12,
+                                    fontFamily: 'Raleway-Light',
+                                }}>
+                                    Güncel olarak kullandığınız ilaçları {"\n"}reçetenize ekleyebilirsiniz
+                                </Text>
+                            </View>
+                            <Image style={{
+                                height: 24,
+                                width: 24,
+                                marginRight: 16,
+                                tintColor: colors.primaryColor,
+                            }} source={require("../../../assets/icons/fav.png")} />
+
+                        </View>
+                    </TouchableOpacity>
                 </SafeAreaView>
             </PersistGate>
         </Provider>

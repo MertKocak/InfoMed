@@ -15,6 +15,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { store, persistor } from "./context/store";
 import colors from './colors';
 import styles from "./Router.style"
+import PrescriptionPage from './pages/PrescriptionPage';
 
 const Router = ({ route, navigation }) => {
 
@@ -111,6 +112,24 @@ const Router = ({ route, navigation }) => {
             <Stack.Screen name="FavoritesPage" component={FavoritesPage}
               options={({ navigation }) => ({
                 title: "Sık Kullanılanlar",
+                headerTitleStyle: {
+                  fontFamily: 'Raleway-SemiBold',
+                  fontSize: 16
+                },
+                headerStyle: { backgroundColor: colors.primaryColor },
+                headerShadowVisible: false,
+                headerTitleAlign: 'center',
+                headerTintColor: "white",
+                headerRight: () => (
+                  <TouchableOpacity onPress={() => navigation.navigate("HomePage")}><View style={{ height: 40, width: 40, justifyContent: 'center', alignItems: 'flex-end' }}><Image style={{ height: 20, width: 20, tintColor: colors.secondaryColor }} source={require('../assets/icons/home.png')} /></View></TouchableOpacity>
+                ),
+                headerLeft: () => (
+                  <TouchableOpacity onPress={() => navigation.goBack()}><View style={{ height: 40, width: 40, justifyContent: 'center', alignItems: 'flex-start' }}><Image style={{ height: 18, width: 18, tintColor: colors.secondaryColor }} source={require('../assets/icons/back.png')} /></View></TouchableOpacity>
+                ),
+              })} />
+              <Stack.Screen name="PrescriptionPage" component={PrescriptionPage}
+              options={({ navigation }) => ({
+                title: "Reçetem",
                 headerTitleStyle: {
                   fontFamily: 'Raleway-SemiBold',
                   fontSize: 16

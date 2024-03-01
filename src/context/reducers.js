@@ -3,10 +3,51 @@ import { Alert } from 'react-native';
 
 const initialState = {
     favDrugsList: [],
+    prescriptionList: [],
 };
 
 export default function (state = initialState, action) {
     switch (action.type) {
+        case "ADD_PRESCRIPTION":
+            var prescriptionCheck = false;
+            console.log(prescriptionCheck);
+            [...state.prescriptionList].map(function (item, index) {
+                (item == action.payload.drug.title) ? prescriptionCheck = true : prescriptionCheck = prescriptionCheck;
+            });
+            console.log(prescriptionCheck)
+            if (!prescriptionCheck) {
+                Alert.alert("Eklendi", "İlaç reçetenize eklendi." , [
+                    {text: 'TAMAM', onPress: () => console.log('OK Pressed')
+                    },
+                  ] ),
+                console.log("r1");
+                var newPrescriptionList = [];
+                newPrescriptionList.id = action.payload.drug.id;
+                newPrescriptionList.title = action.payload.drug.title;
+                newPrescriptionList.description = action.payload.drug.description;
+                newPrescriptionList.price = action.payload.drug.price;
+                newPrescriptionList.etkenmadde = action.payload.drug.etkenmadde;
+                newPrescriptionList.muadili = action.payload.drug.muadili;
+                newPrescriptionList.image = action.payload.drug.image;
+            
+                return { ...state, prescriptionList: [...state.prescriptionList, newPrescriptionList.title] }
+            }
+            else {   
+                Alert.alert("Eklenenemedi", "İlaç zaten sık kullanılanlar listenizde ekli." , [
+                    {text: 'TAMAM', onPress: () => console.log('OK Pressed')},
+                  ] );
+                return state;
+            }
+            case 'REMOVE_PRESCRIPTION':
+            Alert.alert("Silindi", "İlaç reçetenizden silindi.", [
+                { text: 'TAMAM', onPress: () => console.log('OK Pressed') },
+            ]), 
+                console.log("B1")
+            return {
+                ...state, prescriptionList: [
+                    ...state.prescriptionList.filter(drug => drug !== action.payload.drug),
+                ],
+            };
         case "ADD_FAV":
             var favCheck = false;
             console.log(favCheck);
@@ -37,11 +78,11 @@ export default function (state = initialState, action) {
                   ] );
                 return state;
             }
-            break;
+            
         case 'REMOVE_FAV':
-            /* Alert.alert("Silindi", "İlaç sık kullanılanlarınızdan silindi.", [
+            Alert.alert("Silindi", "İlaç sık kullanılanlarınızdan silindi.", [
                 { text: 'TAMAM', onPress: () => console.log('OK Pressed') },
-            ]), */
+            ]), 
                 console.log("B1")
             return {
                 ...state, favDrugsList: [

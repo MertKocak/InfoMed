@@ -28,50 +28,21 @@ export default StyleSheet.create({
     container1: {
         flexDirection: "row"
     },
-    centeredView: {
+    container: {
         flex: 1,
+        alignItems: 'center',
         justifyContent: 'center',
-        alignItems: 'center',
-    },
-    modalView: {
-        alignContent: "center",
-        backgroundColor: "white",
-        borderRadius: 8,
- width: windowWidth - 60,
-        alignItems: 'center',
-        justifyContent: "space-between"
-    },
-    button: {
-        borderRadius: 20,
-        padding: 10,
-        margin: 20,
-        width: windowWidth - 100,
-    },
-    buttonClose: {
-        backgroundColor: colors.primaryColor,
-    },
-    buttonOpen: {
-
-        backgroundColor: colors.primaryColor,
-    },
-    textStyle: {
-        color: 'white',
-        fontWeight: 'bold',
-        textAlign: 'center',
-    },
-    modalText: {
-        marginTop: 20,
-        padding: 14,
-        fontSize: 16,
-        color: colors.primaryColor,
-        fontFamily: "Raleway-Regular",
-        textAlign: 'center',
-    },
-    icon: {
-        height: 24,
-        width: 24,
-        tintColor: colors.secondaryColor,
-        alignSelf: "flex-end",
-        marginRight: 12,
-    }
+        backgroundColor: '#fff',
+      },
+      button: {
+        margin: 10,
+        paddingHorizontal: 10,
+        paddingVertical: 7,
+        borderRadius: 5,
+        backgroundColor: "#AEDEF4",
+      },
+      text: {
+        color: '#fff',
+        fontSize: 15
+      }
 })

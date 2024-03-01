@@ -81,7 +81,6 @@ const DrugCard = ({ data, onPress, favorite }) => {
     
 
     const dispatch = useDispatch();
-    const [fav, setFav] = useState(false);
 
     const handleAddFav = () => {
         dispatch({ type: "ADD_FAV", payload: { drug: data } });

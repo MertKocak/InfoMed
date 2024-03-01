@@ -17,8 +17,7 @@ export default StyleSheet.create({
         paddingBottom: 12,
         paddingRight: 6,
         borderRadius: 8,
-        borderBottomRightRadius: 0,
-        borderBottomLeftRadius: 0,
+
         flexDirection: "row",
         width: (windowWidth - 24),
         height: 140,
@@ -63,8 +62,8 @@ export default StyleSheet.create({
         fontFamily: 'Raleway-SemiBold',
     },
     subtitle2: {
-        marginTop: 8,
-        marginLeft: 6,
+        marginTop: 2,
+
         color: colors.primaryColor,
         fontSize: 16,
         fontFamily: 'Raleway-SemiBold',
@@ -76,10 +75,54 @@ export default StyleSheet.create({
         fontFamily: 'Raleway-Regular',
     },
     contents2: {
-        marginTop: 8,
         marginLeft: 6,
+        marginTop: 2,
         color: "#191919",
         fontSize: 16,
         fontFamily: 'Raleway-Regular',
-    }
+    },
+    buttonsContainer: {
+        flexDirection: "row",
+
+    },
+    addFavButton: {
+        backgroundColor: colors.primaryColor,
+        height: 48,
+        width: (windowWidth - 30) / 2,
+        marginLeft: 12,
+        marginTop: 12,
+        borderRadius: 8,
+        marginBottom: 2,
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    addPresButton: {
+        backgroundColor: colors.primaryColor,
+        height: 48,
+        width: (windowWidth - 30) / 2,
+        margin: 12,
+        marginLeft: 6,
+        marginTop: 12,
+        borderRadius: 8,
+        marginBottom: 2,
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+
+    },
+    buttonIcon: {
+        height: 22,
+        width: 22,
+        tintColor: colors.secondaryColor,
+        marginRight: 4,
+
+    },
+    buttonText: {
+        marginBottom: 2,
+        color: colors.secondaryColor,
+        fontFamily: "Raleway-Medium",
+        fontSize: 14,
+
+    },
 })

@@ -1,10 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, Image, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, Image, ScrollView, TouchableOpacity } from 'react-native';
 import styles from "./InfoPage.style";
 import { NavigationContainer, useRoute } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import drug_data from "../../drug_data.json";
 import colors from '../../colors';
+import { UseDispatch, useDispatch } from 'react-redux';
 
 const InfoPage = ({ route, navigation }) => {
     const { id, title, description, image, price, etkenmadde, muadili } = route.params;
@@ -77,26 +78,45 @@ const InfoPage = ({ route, navigation }) => {
         img = images.metsil;
     }
 
+    const dispatch = useDispatch();
+    
+
+    const handleAddPrescription = () => {
+        dispatch({ type: "ADD_PRESCRIPTION", payload: { drug: route.params } });
+    }
+
+    const handleAddFav = () => {
+        dispatch({ type: "ADD_FAV", payload: { drug: route.params } });
+    }
+
     return (
         <ScrollView style={styles.body}>
             <SafeAreaView style={styles.body}>
                 <SafeAreaView style={styles.top_container}>
                     <Image style={styles.image} source={img} />
                     <SafeAreaView style={styles.body_container}>
-                        
-                            <Text style={styles.title}>{title}</Text>
-                            <Text style={styles.price}>Fiyat: {price} ₺</Text>
-                    
+
+                        <Text style={styles.title}>{title}</Text>
+                        <Text style={styles.price}>Fiyat: {price} ₺</Text>
+
                     </SafeAreaView>
                 </SafeAreaView>
+                <View style={styles.buttonsContainer}>
+                    <TouchableOpacity onPress={handleAddFav}>
+                    <View style = {styles.addFavButton}>
+                        <Image style = {styles.buttonIcon} source={require("../../../assets/icons/save.png")} />
+                        <Text style = {styles.buttonText} >Sık Kullanılanlara Ekle</Text>
+                    </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={handleAddPrescription}>
+                    <View style = {styles.addPresButton}>
+                        <Image style = {styles.buttonIcon} source={require("../../../assets/icons/save.png")} />
+                        <Text style = {styles.buttonText} >Reçeteme Ekle</Text>
+                    </View>
+                    </TouchableOpacity>
+                </View>
                 <SafeAreaView style={styles.bottom_container}>
-                    <View style={{ flexDirection: 'row' , 
-                    borderRadius: 8,
-                    height: 40,
-                    borderTopLeftRadius: 0,
-                    borderTopRightRadius: 0,
-                    
-                    backgroundColor: colors.secondaryColor}}>
+                    <View style={{ flexDirection: 'row' }}>
                         <Text style={styles.subtitle2}>Etken Madde:</Text>
                         <Text style={styles.contents2}>{etkenmadde}</Text>
                     </View>
