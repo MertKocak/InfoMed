@@ -16,7 +16,7 @@ export default function (state = initialState, action) {
             console.log(favCheck)
             if (!favCheck) {
                 Alert.alert("Eklendi", "İlaç sık kullanılanlar listenize eklendi." , [
-                    {text: 'TAMAM', onPress: () => console.log('OK Pressed'), 
+                    {text: 'TAMAM', onPress: () => console.log('OK Pressed')
                     },
                   ] ),
                 console.log("A1");
@@ -39,9 +39,9 @@ export default function (state = initialState, action) {
             }
             break;
         case 'REMOVE_FAV':
-            Alert.alert("Silindi", "İlaç sık kullanılanlarınızdan silindi.", [
+            /* Alert.alert("Silindi", "İlaç sık kullanılanlarınızdan silindi.", [
                 { text: 'TAMAM', onPress: () => console.log('OK Pressed') },
-            ]),
+            ]), */
                 console.log("B1")
             return {
                 ...state, favDrugsList: [

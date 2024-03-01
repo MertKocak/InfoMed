@@ -23,7 +23,7 @@ const FavDrugCard = ({ data, onPress }) => {
                 <SafeAreaView style={styles.body_container}>
                     <Text style={styles.title} numberOfLines={2}>{data}</Text>
                 </SafeAreaView>
-                <SafeAreaView style={styles.fav_container}>
+                <SafeAreaView style={styles.trash_container}>
                     <TouchableOpacity onPress={handleRemoveFav}>
                     <Image style={{height: 28, width: 28, alignItems: 'center', tintColor: colors.primaryColor}} source={require("../../../assets/icons/trash.png")} />
                     </TouchableOpacity>

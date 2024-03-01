@@ -19,28 +19,30 @@ export default StyleSheet.create({
         justifyContent: "space-between"
     },
     button: {
-        borderRadius: 20,
+        borderRadius: 50,
         padding: 10,
-        margin: 20,
-        width: windowWidth - 100,
+        margin: 16,
+        marginTop: 6,
+        width: 180,
+        height: 42
     },
     buttonClose: {
         backgroundColor: colors.primaryColor,
     },
     buttonOpen: {
-  
+
         backgroundColor: colors.primaryColor,
     },
     textStyle: {
         color: colors.secondaryColor,
-        fontSize: 16,
+        fontSize: 14,
         fontFamily: "Raleway-Bold",
         textAlign: 'center',
     },
     modalText: {
-        marginTop: 20,
+        textAlignVertical: "center",
         padding: 14,
-        fontSize: 16,
+        fontSize: 14,
         color: colors.primaryColor,
         fontFamily: "Raleway-Regular",
         textAlign: 'center',

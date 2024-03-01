@@ -32,7 +32,7 @@ export default StyleSheet.create({
         fontFamily: 'Raleway-Medium',
       
     },   
-    fav_container: {
+    trash_container: {
         justifyContent: "center",
         marginRight: 4,
         marginTop: 10

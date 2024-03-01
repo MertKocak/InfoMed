@@ -18,8 +18,6 @@ const HomePage = ({ route, navigation }) => {
     const windowWidth = Dimensions.get('window').width;
     const windowHeight = Dimensions.get('window').height;
 
-
-
     const dispatch = useDispatch();
 
     const onPressButton = (buttonName) => {
@@ -33,14 +31,14 @@ const HomePage = ({ route, navigation }) => {
             <PersistGate loading={null} persistor={persistor}>
 
                 <SafeAreaView style={styles.body}>
-                
+
 
                     <View style={styles.topContainer}>
-                    
+
                         <Image style={styles.logoImage} source={require('../../../assets/images/InfoMed.png')} />
-                        
+
                     </View>
-                    
+
                     <TouchableOpacity onPress={() => onPressButton("FavoritesPage")}>
                         <View style={{
                             width: (windowWidth - 24),
@@ -78,6 +76,7 @@ const HomePage = ({ route, navigation }) => {
                         <HomeCard title={"Semptom"} desc={"Sahip olduğunuz belirtileri aratarak ilaç önerisi alabilirsiniz"} imgPath={"3"} onPress={() => onPressButton("IndicationPage")}></HomeCard>
                         <HomeCard title={"Muadil İlaç"} desc={"Girmiş olduğunuz ilaca eşdeğer ilaç önerisi alabilirsiniz"} imgPath={"5"} onPress={() => onPressButton("EquivalentPage")}></HomeCard>
                     </View>
+                    
                 </SafeAreaView>
             </PersistGate>
         </Provider>
