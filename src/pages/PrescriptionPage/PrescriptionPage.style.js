@@ -11,13 +11,12 @@ export default StyleSheet.create({
     },
     button: {
         height: 48,
-        width: windowWidth-24,
+        width: windowWidth-48,
         backgroundColor: colors.primaryColor,
         justifyContent: "center",
         alignItems: "center",
-        borderRadius: 12,
+        borderRadius: 10,
         margin: 12,
-        marginBottom: 0
     },
     buttonText: {
         fontSize: 16,
@@ -50,50 +49,12 @@ export default StyleSheet.create({
         textAlign: "center",
         fontFamily: 'Raleway-Bold'
     },
-    warning: {
-        flexDirection: "row", 
-        backgroundColor: "white", 
-        margin: 12, 
-        marginBottom: 0, 
-        marginTop: 6, 
-        borderRadius: 12,
-    },
-    warningIcon: {
-        height: 24, 
-        width: 24, 
-        margin: 8,
-        marginTop: 4, 
-        marginLeft: 2, 
-        marginRight: 4,
-        tintColor: colors.primaryColor
-    },
-    input: {
+    dateContainer: {
+        justifyContent: "center",
         backgroundColor: colors.secondaryColor,
-        height: 42,
-        width: windowWidth-100,
-        borderRadius: 36,
-        fontSize: 16,
-        alignContent: "center",
-        color: colors.primaryColor,
-        fontFamily: 'Raleway-Regular',
-        paddingLeft: 12,
-        
-      },
-      searchBody: {
-        backgroundColor: colors.secondaryColor,
-        flexDirection: "row",
+        alignItems: "center",
         margin: 12,
-        borderRadius: 36,
-        height: 44,
-        borderWidth: 1,
-        borderColor: colors.primaryColor,
-        marginBottom: 0
-      },
-      searchIcon: {
-        height: 36,
-        width: 36,
-        marginLeft: 6,
-        marginTop: 3,
-        tintColor: colors.primaryColor
-      }
+        borderRadius: 12,
+        marginBottom: 0,
+    },
 })

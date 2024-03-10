@@ -21,13 +21,13 @@ export default StyleSheet.create({
     },
     body_container: {
         padding: 12,
+        flex: 1,
         justifyContent: "flex-start",
         flexDirection: "column",
     },
     title: {
         color: colors.primaryColor,
         fontSize: 14,
-        marginRight: 120,
         fontFamily: 'Raleway-Bold',
     },
     price: {
@@ -86,7 +86,7 @@ export default StyleSheet.create({
     addFavButton: {
         backgroundColor: colors.primaryColor,
         height: 42,
-        width: (windowWidth - 60) / 2,
+        width: (windowWidth - 48) / 2,
         borderRadius: 20,
         flexDirection: "row",
         justifyContent: "center",
@@ -95,9 +95,9 @@ export default StyleSheet.create({
     addPresButton: {
         backgroundColor: colors.primaryColor,
         height: 42,
-        width: (windowWidth - 60) / 2,
+        width: (windowWidth - 48) / 2,
         borderRadius: 20,
-        marginLeft: 12,
+        marginLeft: 6,
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
@@ -113,9 +113,7 @@ export default StyleSheet.create({
     buttonText: {
         marginBottom: 2,
         color: colors.secondaryColor,
-        fontFamily: "Raleway-Medium",
-        fontSize: 12,
-        
-
+        fontFamily: "Raleway-SemiBold",
+        fontSize: 11,
     },
 })

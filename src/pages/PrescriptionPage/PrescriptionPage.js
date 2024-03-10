@@ -1,11 +1,15 @@
-import React, { useState } from 'react';
-import { StyleSheet, Text, View, SafeAreaView, FlatList, TouchableOpacity, TextInput, ScrollView, Image } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { StyleSheet, Button, Text, View, SafeAreaView, FlatList, TouchableOpacity, TextInput, ScrollView, Image, Alert } from 'react-native';
 import styles from "./PrescriptionPage.style";
 import drug_data from "../../drug_data.json";
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import PrescriptionCard from '../../components/PrescriptionCard';
 import { useSelector } from 'react-redux';
 import FavDrugCard from '../../components/FavDrugCard';
+import DatePicker from 'react-native-date-picker';
+import Notifications from '../../../Notifications';
+import {check, PERMISSIONS, RESULTS} from 'react-native-permissions';
+import { request } from 'react-native-permissions';
 
 
 const PrescriptionPage = ({ navigation }) => {
@@ -14,27 +18,31 @@ const PrescriptionPage = ({ navigation }) => {
     const [listE, setListE] = useState([]);
     const [text, setText] = useState("");
 
+    useEffect(() => {
+        requestPermission();
+      }, []);
+
+    const requestNotificationPermission = async () => {
+        const result = await request(PERMISSIONS.ANDROID.POST_NOTIFICATIONS);
+        return result;
+      };
+
+      const checkNotificationPermission = async () => {
+        const result = await check(PERMISSIONS.ANDROID.POST_NOTIFICATIONS);
+        return result;
+      };
+
+      const requestPermission = async () => {
+        const checkPermission = await checkNotificationPermission();
+        if (checkPermission !== RESULTS.GRANTED) {
+         const request = await requestNotificationPermission();
+           if(request !== RESULTS.GRANTED){
+            }
+        }
+      };
+
     const prescriptionList = useSelector(state => state.prescriptionList);
 
-    const onChangeText = (text) => {
-        const filteredList = drug_data.filter(drug => {
-            const searchedText = text.toLowerCase();
-            const currentTitle = drug.title.toLowerCase();
-            return currentTitle.indexOf(searchedText) > -1;
-        });
-        setListE(filteredList);
-    }
-
-    const onPress = () => {
-        const filteredList = drug_data.filter(
-            drug => {
-                const searchedText = text.toLowerCase();
-                const currentTitle = drug.title.toLowerCase();
-                return currentTitle.indexOf(searchedText) > -1;
-            }
-        );
-        setListE(filteredList);
-    }
 
     const onPressDrug = ([id, title, description, image, price, etkenmadde, muadili, isFav]) => {
         return (
@@ -51,15 +59,18 @@ const PrescriptionPage = ({ navigation }) => {
             ))
     };
 
+   
+
     return (
         <ScrollView style={styles.body}>
             <SafeAreaView >
                 <View style={styles.body}>
-                        <FlatList
-                            contentContainerStyle={{ paddingBottom: 12 }}
-                            data={prescriptionList}
-                            renderItem={({ item }) => <PrescriptionCard data={item} />}
-                        />
+                    
+                    <FlatList
+                        contentContainerStyle={{ paddingBottom: 12 }}
+                        data={prescriptionList}
+                        renderItem={({ item }) => <PrescriptionCard data={item} />}
+                    />
                 </View>
             </SafeAreaView>
         </ScrollView>

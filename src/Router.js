@@ -40,7 +40,7 @@ const Router = ({ route, navigation }) => {
                 headerStyle: { backgroundColor: colors.primaryColor },
                 headerTitleStyle: {
                   fontFamily: 'Raleway-SemiBold',
-                  fontSize: 16
+                  fontSize: 15
                 },
                 headerShadowVisible: false,
                 headerTitleAlign: 'center',
@@ -78,7 +78,7 @@ const Router = ({ route, navigation }) => {
                 title: "İlaç Ara",
                 headerTitleStyle: {
                   fontFamily: 'Raleway-SemiBold',
-                  fontSize: 16
+                  fontSize: 15
                 },
                 headerStyle: { backgroundColor: colors.primaryColor },
                 headerShadowVisible: false,
@@ -96,7 +96,7 @@ const Router = ({ route, navigation }) => {
                 title: "Etken Madde Ara",
                 headerTitleStyle: {
                   fontFamily: 'Raleway-SemiBold',
-                  fontSize: 16
+                  fontSize: 15
                 },
                 headerStyle: { backgroundColor: colors.primaryColor },
                 headerShadowVisible: false,
@@ -111,10 +111,10 @@ const Router = ({ route, navigation }) => {
               })} />
             <Stack.Screen name="FavoritesPage" component={FavoritesPage}
               options={({ navigation }) => ({
-                title: "Sık Kullanılanlar",
+                title: "Kaydedilenler",
                 headerTitleStyle: {
                   fontFamily: 'Raleway-SemiBold',
-                  fontSize: 16
+                  fontSize: 15
                 },
                 headerStyle: { backgroundColor: colors.primaryColor },
                 headerShadowVisible: false,
@@ -132,7 +132,7 @@ const Router = ({ route, navigation }) => {
                 title: "Reçetem",
                 headerTitleStyle: {
                   fontFamily: 'Raleway-SemiBold',
-                  fontSize: 16
+                  fontSize: 15
                 },
                 headerStyle: { backgroundColor: colors.primaryColor },
                 headerShadowVisible: false,
@@ -150,7 +150,7 @@ const Router = ({ route, navigation }) => {
                 title: "Semptom",
                 headerTitleStyle: {
                   fontFamily: 'Raleway-SemiBold',
-                  fontSize: 16
+                  fontSize: 15
                 },
                 headerStyle: { backgroundColor: colors.primaryColor },
                 headerShadowVisible: false,
@@ -168,7 +168,7 @@ const Router = ({ route, navigation }) => {
                 title: "Muadil İlaç",
                 headerTitleStyle: {
                   fontFamily: 'Raleway-SemiBold',
-                  fontSize: 16
+                  fontSize: 15
                 },
                 headerStyle: { backgroundColor: colors.primaryColor },
                 headerShadowVisible: false,
@@ -186,7 +186,7 @@ const Router = ({ route, navigation }) => {
                 title: "Prospektüs",
                 headerTitleStyle: {
                   fontFamily: 'Raleway-SemiBold',
-                  fontSize: 16
+                  fontSize: 15
                 },
                 headerStyle: { backgroundColor: colors.primaryColor },
                 headerShadowVisible: false,

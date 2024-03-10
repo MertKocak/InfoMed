@@ -104,7 +104,7 @@ const InfoPage = ({ route, navigation }) => {
                         <TouchableOpacity onPress={handleAddFav}>
                             <View style={styles.addFavButton}>
                                 <Image style={styles.buttonIcon} source={require("../../../assets/icons/save.png")} />
-                                <Text style={styles.buttonText} >Sık Kullanılanlara Ekle</Text>
+                                <Text style={styles.buttonText} >Kaydedilenlere Ekle</Text>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity onPress={handleAddPrescription}>

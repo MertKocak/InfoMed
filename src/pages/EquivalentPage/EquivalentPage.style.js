@@ -11,7 +11,7 @@ export default StyleSheet.create({
     },
 
     button: {
-        height: 48,
+        height: 42,
         width: windowWidth - 24,
         backgroundColor: colors.primaryColor,
         justifyContent: "center",
@@ -21,7 +21,7 @@ export default StyleSheet.create({
         marginBottom: 0
     },
     buttonText: {
-        fontSize: 16,
+        fontSize: 14,
         color: "white",
         fontFamily: 'Raleway-Bold',
     },
@@ -69,7 +69,7 @@ export default StyleSheet.create({
     },
     input: {
         backgroundColor: colors.secondaryColor,
-        height: 38,
+        height: 40,
         width: windowWidth - 100,
         borderRadius: 36,
         fontSize: 14,
@@ -84,7 +84,7 @@ export default StyleSheet.create({
         flexDirection: "row",
         margin: 12,
         borderRadius: 36,
-        height: 40,
+        height: 42,
         borderWidth: 0.8,
         borderColor: colors.primaryColor,
         marginBottom: 0,

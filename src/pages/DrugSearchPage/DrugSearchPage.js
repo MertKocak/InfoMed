@@ -9,6 +9,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import InfoPage from '../InfoPage';
 import BottomNavigator from '../../components/BottomNavigator';
 import { withNavigation } from "react-navigation";
+import Toast from 'react-native-toast-message';
 
 const DrugSearchPage = ({ item, navigation, route }) => {
   const [list, setList] = useState(drug_data);

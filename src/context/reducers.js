@@ -56,7 +56,7 @@ export default function (state = initialState, action) {
             });
             console.log(favCheck)
             if (!favCheck) {
-                Alert.alert("Eklendi", "İlaç sık kullanılanlar listenize eklendi." , [
+                Alert.alert("Eklendi", "İlaç kaydedilenler listenize eklendi." , [
                     {text: 'TAMAM', onPress: () => console.log('OK Pressed')
                     },
                   ] ),
@@ -73,14 +73,14 @@ export default function (state = initialState, action) {
                 return { ...state, favDrugsList: [...state.favDrugsList, newDrugsList.title] }
             }
             else {   
-                Alert.alert("Eklenenemedi", "İlaç zaten sık kullanılanlar listenizde ekli." , [
+                Alert.alert("Eklenenemedi", "İlaç zaten kaydedilenler listenizde ekli." , [
                     {text: 'TAMAM', onPress: () => console.log('OK Pressed')},
                   ] );
                 return state;
             }
             
         case 'REMOVE_FAV':
-            Alert.alert("Silindi", "İlaç sık kullanılanlar listenizden silindi.", [
+            Alert.alert("Silindi", "İlaç kaydedilenler listenizden silindi.", [
                 { text: 'TAMAM', onPress: () => console.log('OK Pressed') },
             ]), 
                 console.log("B1")

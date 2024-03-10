@@ -17,12 +17,12 @@ export default StyleSheet.create({
     },
     title: {
         color: colors.primaryColor,
-        fontSize: 14,
+        fontSize: 13,
         fontFamily: 'Raleway-SemiBold',
     },
     desc: {
         color: colors.primaryColor,
-        fontSize: 12,
+        fontSize: 11,
         marginTop: 2,
         fontFamily: 'Raleway-Light',
     },

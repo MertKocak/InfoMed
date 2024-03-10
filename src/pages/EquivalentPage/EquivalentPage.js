@@ -4,6 +4,7 @@ import styles from "./EquivalentPage.style";
 import DrugCard from '../../components/DrugCard';
 import drug_data from "../../drug_data.json";
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
+import colors from '../../colors';
 
 
 const EquivalentPage = ({ navigation }) => {
@@ -44,7 +45,7 @@ const EquivalentPage = ({ navigation }) => {
                 <View style={styles.body}>
                     <View style={styles.searchBody}>
                         <Image style={styles.searchIcon} source={require("../../../assets/icons/search.png")} />
-                        <TextInput placeholder="Muadil ilaç ara..." placeholderTextColor={"#002C4C"}
+                        <TextInput placeholder="Muadil ilaç ara..." placeholderTextColor={colors.primaryColor}
                             style={styles.input} onChangeText={setText} />
                     </View>
                     <TouchableOpacity onPress={onPress} style={styles.button}>

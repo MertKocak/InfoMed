@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Alert, Modal, Pressable, Image, StyleSheet, Text, View, SafeAreaView, TouchableWithoutFeedback, TouchableOpacity, Dimensions } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { Alert, Button, Modal, Pressable, Image, StyleSheet, Text, View, SafeAreaView, TouchableWithoutFeedback, TouchableOpacity, Dimensions } from 'react-native';
 import styles from "./HomePage.style";
 import HomeCard from '../../components/HomeCard';
 import DrugSearchPage from '../DrugSearchPage';
@@ -12,8 +12,15 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { store, persistor } from "../../context/store";
 import EquivalentPage from '../EquivalentPage/EquivalentPage';
 import colors from '../../colors';
+import {check, PERMISSIONS, RESULTS} from 'react-native-permissions';
+import { request } from 'react-native-permissions';
+
 
 const HomePage = ({ route, navigation }) => {
+
+    useEffect(() => {
+        requestPermission();
+      }, []);
 
     const windowWidth = Dimensions.get('window').width;
     const windowHeight = Dimensions.get('window').height;
@@ -26,6 +33,25 @@ const HomePage = ({ route, navigation }) => {
         )
     }
 
+    const requestNotificationPermission = async () => {
+        const result = await request(PERMISSIONS.ANDROID.POST_NOTIFICATIONS);
+        return result;
+      };
+
+      const checkNotificationPermission = async () => {
+        const result = await check(PERMISSIONS.ANDROID.POST_NOTIFICATIONS);
+        return result;
+      };
+
+      const requestPermission = async () => {
+        const checkPermission = await checkNotificationPermission();
+        if (checkPermission !== RESULTS.GRANTED) {
+         const request = await requestNotificationPermission();
+           if(request !== RESULTS.GRANTED){
+            }
+        }
+      };
+
     return (
         <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}>
@@ -34,7 +60,7 @@ const HomePage = ({ route, navigation }) => {
                         <Image style={styles.logoImage} source={require('../../../assets/images/InfoMed.png')} />
                     </View>
                     <View style={styles.container1}>
-                        <HomeCard title={"Sık Kullanılanlar"} desc={"En sık kullandığınız ilaçları sık kullanılanlar listenize ekleyebilirsiniz"} imgPath={"4"} onPress={() => onPressButton("FavoritesPage")}></HomeCard>
+                        <HomeCard title={"Kaydedilenler"} desc={"Daha sonra incelemek istediğiniz ilaçları kayıt listenize ekleyebilirsiniz"} imgPath={"4"} onPress={() => onPressButton("FavoritesPage")}></HomeCard>
                         <HomeCard title={"Reçetem"} desc={"Güncel olarak kullandığınız ilaçları reçetenize ekleyebilirsiniz"} imgPath={"6"} onPress={() => onPressButton("PrescriptionPage")}></HomeCard>
                     </View>
                     <View style={styles.container1}>
