@@ -79,7 +79,7 @@ const InfoPage = ({ route, navigation }) => {
     }
 
     const dispatch = useDispatch();
-    
+
 
     const handleAddPrescription = () => {
         dispatch({ type: "ADD_PRESCRIPTION", payload: { drug: route.params } });
@@ -93,28 +93,29 @@ const InfoPage = ({ route, navigation }) => {
         <ScrollView style={styles.body}>
             <SafeAreaView style={styles.body}>
                 <SafeAreaView style={styles.top_container}>
+                    <View style = {{flexDirection: 'row'}}>
                     <Image style={styles.image} source={img} />
-                    <SafeAreaView style={styles.body_container}>
-
+                    <View style={styles.body_container}>
                         <Text style={styles.title}>{title}</Text>
                         <Text style={styles.price}>Fiyat: {price} ₺</Text>
-
-                    </SafeAreaView>
+                    </View>
+                    </View>
+                    <View style={styles.buttonsContainer}>
+                        <TouchableOpacity onPress={handleAddFav}>
+                            <View style={styles.addFavButton}>
+                                <Image style={styles.buttonIcon} source={require("../../../assets/icons/save.png")} />
+                                <Text style={styles.buttonText} >Sık Kullanılanlara Ekle</Text>
+                            </View>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={handleAddPrescription}>
+                            <View style={styles.addPresButton}>
+                                <Image style={styles.buttonIcon} source={require("../../../assets/icons/addprescription.png")} />
+                                <Text style={styles.buttonText} >Reçeteme Ekle</Text>
+                            </View>
+                        </TouchableOpacity>
+                    </View>
                 </SafeAreaView>
-                <View style={styles.buttonsContainer}>
-                    <TouchableOpacity onPress={handleAddFav}>
-                    <View style = {styles.addFavButton}>
-                        <Image style = {styles.buttonIcon} source={require("../../../assets/icons/save.png")} />
-                        <Text style = {styles.buttonText} >Sık Kullanılanlara Ekle</Text>
-                    </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={handleAddPrescription}>
-                    <View style = {styles.addPresButton}>
-                        <Image style = {styles.buttonIcon} source={require("../../../assets/icons/save.png")} />
-                        <Text style = {styles.buttonText} >Reçeteme Ekle</Text>
-                    </View>
-                    </TouchableOpacity>
-                </View>
+
                 <SafeAreaView style={styles.bottom_container}>
                     <View style={{ flexDirection: 'row' }}>
                         <Text style={styles.subtitle2}>Etken Madde:</Text>

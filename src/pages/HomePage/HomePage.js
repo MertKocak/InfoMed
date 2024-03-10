@@ -29,17 +29,39 @@ const HomePage = ({ route, navigation }) => {
     return (
         <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}>
-
                 <SafeAreaView style={styles.body}>
-
-
                     <View style={styles.topContainer}>
-
                         <Image style={styles.logoImage} source={require('../../../assets/images/InfoMed.png')} />
-
                     </View>
+                    <View style={styles.container1}>
+                        <HomeCard title={"Sık Kullanılanlar"} desc={"En sık kullandığınız ilaçları sık kullanılanlar listenize ekleyebilirsiniz"} imgPath={"4"} onPress={() => onPressButton("FavoritesPage")}></HomeCard>
+                        <HomeCard title={"Reçetem"} desc={"Güncel olarak kullandığınız ilaçları reçetenize ekleyebilirsiniz"} imgPath={"6"} onPress={() => onPressButton("PrescriptionPage")}></HomeCard>
+                    </View>
+                    <View style={styles.container1}>
+                        <HomeCard title={"İlaç Bilgisi"} desc={"Prospektüs içeriğine erişmek istediğiniz ilacı aratabilirsiniz"} imgPath={"1"} onPress={() => onPressButton("DrugSearchPage")}></HomeCard>
+                        <HomeCard title={"Etken Madde"} desc={"İçerdiği etken maddeye göre ilaç araması yapabilirsiniz"} imgPath={"2"} onPress={() => onPressButton("EMSearchPage")}></HomeCard>
+                    </View>
+                    <View style={styles.container1}>
+                        <HomeCard title={"Semptom"} desc={"Sahip olduğunuz belirtileri aratarak ilaç önerisi alabilirsiniz"} imgPath={"3"} onPress={() => onPressButton("IndicationPage")}></HomeCard>
+                        <HomeCard title={"Muadil İlaç"} desc={"Girmiş olduğunuz ilaca eşdeğer ilaç önerisi alabilirsiniz"} imgPath={"5"} onPress={() => onPressButton("EquivalentPage")}></HomeCard>
+                    </View>
+                </SafeAreaView>
+            </PersistGate>
+        </Provider>
 
-                    <TouchableOpacity onPress={() => onPressButton("FavoritesPage")}>
+    );
+}
+
+
+
+export default HomePage;
+
+/**
+ * <HomeCard title = {"Sık Kullanılanlar"} desc = {"En sık kullandığınız ilaçları sık kullanılanlar listenize ekleyebilirsiniz"} imgPath={"4"} onPress={() => onPressButton("FavoritesPage")}></HomeCard>
+ */
+
+/**
+ * <TouchableOpacity onPress={() => onPressButton("FavoritesPage")}>
                         <View style={{
                             width: (windowWidth - 24),
                             height: 80, backgroundColor: colors.secondaryColor, margin: 12, marginBottom: 0, borderRadius: 8, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row',
@@ -68,14 +90,7 @@ const HomePage = ({ route, navigation }) => {
 
                         </View>
                     </TouchableOpacity>
-                    <View style={styles.container1}>
-                        <HomeCard title={"İlaç Bilgisi"} desc={"Prospektüs içeriğine erişmek istediğiniz ilacı aratabilirsiniz"} imgPath={"1"} onPress={() => onPressButton("DrugSearchPage")}></HomeCard>
-                        <HomeCard title={"Etken Madde"} desc={"İçerdiği etken maddeye göre ilaç araması yapabilirsiniz"} imgPath={"2"} onPress={() => onPressButton("EMSearchPage")}></HomeCard>
-                    </View>
-                    <View style={styles.container1}>
-                        <HomeCard title={"Semptom"} desc={"Sahip olduğunuz belirtileri aratarak ilaç önerisi alabilirsiniz"} imgPath={"3"} onPress={() => onPressButton("IndicationPage")}></HomeCard>
-                        <HomeCard title={"Muadil İlaç"} desc={"Girmiş olduğunuz ilaca eşdeğer ilaç önerisi alabilirsiniz"} imgPath={"5"} onPress={() => onPressButton("EquivalentPage")}></HomeCard>
-                    </View>
+
                     <TouchableOpacity onPress={() => onPressButton("PrescriptionPage")}>
                         <View style={{
                             width: (windowWidth - 24),
@@ -101,21 +116,8 @@ const HomePage = ({ route, navigation }) => {
                                 width: 24,
                                 marginRight: 16,
                                 tintColor: colors.primaryColor,
-                            }} source={require("../../../assets/icons/fav.png")} />
+                            }} source={require("../../../assets/icons/prescription.png")} />
 
                         </View>
                     </TouchableOpacity>
-                </SafeAreaView>
-            </PersistGate>
-        </Provider>
-
-    );
-}
-
-
-
-export default HomePage;
-
-/**
- * <HomeCard title = {"Sık Kullanılanlar"} desc = {"En sık kullandığınız ilaçları sık kullanılanlar listenize ekleyebilirsiniz"} imgPath={"4"} onPress={() => onPressButton("FavoritesPage")}></HomeCard>
  */

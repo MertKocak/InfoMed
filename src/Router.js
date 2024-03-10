@@ -50,10 +50,10 @@ const Router = ({ route, navigation }) => {
                     <Pressable
                       style={[styles.buttonOpen]}
                       onPress={() => setModalVisible(true)}>
-                      <Image style={styles.icon} source={require("../assets/icons/info.png")} />
+                      <View style={{ height: 40, width: 40, justifyContent: 'center', marginRight: -2 }}><Image style={styles.icon} source={require('../assets/icons/info.png')} /></View>
                     </Pressable>
                     <Modal
-                      animationType="slide"
+                      animationType="fade"
                       transparent={true}
                       visible={modalVisible}
                       onRequestClose={() => {
@@ -84,9 +84,9 @@ const Router = ({ route, navigation }) => {
                 headerShadowVisible: false,
                 headerTitleAlign: 'center',
                 headerTintColor: "white",
-                headerRight: () => (
-                  <TouchableOpacity onPress={() => navigation.navigate("FavoritesPage")}><View style={{ height: 40, width: 40, justifyContent: 'center', alignItems: 'flex-end' }}><Image style={{ height: 20, width: 20, tintColor: colors.secondaryColor }} source={require('../assets/icons/favorite.png')} /></View></TouchableOpacity>
-                ),
+                /*  headerRight: () => (
+                   <TouchableOpacity onPress={() => navigation.navigate("FavoritesPage")}><View style={{ height: 40, width: 40, justifyContent: 'center', alignItems: 'flex-end' }}><Image style={{ height: 20, width: 20, tintColor: colors.secondaryColor }} source={require('../assets/icons/favorite.png')} /></View></TouchableOpacity>
+                 ), */
                 headerLeft: () => (
                   <TouchableOpacity onPress={() => navigation.goBack()}><View style={{ height: 40, width: 40, justifyContent: 'center', alignItems: 'flex-start' }}><Image style={{ height: 18, width: 18, tintColor: colors.secondaryColor }} source={require('../assets/icons/back.png')} /></View></TouchableOpacity>
                 ),
@@ -102,9 +102,9 @@ const Router = ({ route, navigation }) => {
                 headerShadowVisible: false,
                 headerTitleAlign: 'center',
                 headerTintColor: "white",
-                headerRight: () => (
+                /* headerRight: () => (
                   <TouchableOpacity onPress={() => navigation.navigate("FavoritesPage")}><View style={{ height: 40, width: 40, justifyContent: 'center', alignItems: 'flex-end' }}><Image style={{ height: 20, width: 20, tintColor: colors.secondaryColor }} source={require('../assets/icons/favorite.png')} /></View></TouchableOpacity>
-                ),
+                ), */
                 headerLeft: () => (
                   <TouchableOpacity onPress={() => navigation.goBack()}><View style={{ height: 40, width: 40, justifyContent: 'center', alignItems: 'flex-start' }}><Image style={{ height: 18, width: 18, tintColor: colors.secondaryColor }} source={require('../assets/icons/back.png')} /></View></TouchableOpacity>
                 ),
@@ -120,14 +120,14 @@ const Router = ({ route, navigation }) => {
                 headerShadowVisible: false,
                 headerTitleAlign: 'center',
                 headerTintColor: "white",
-                headerRight: () => (
+                /* headerRight: () => (
                   <TouchableOpacity onPress={() => navigation.navigate("HomePage")}><View style={{ height: 40, width: 40, justifyContent: 'center', alignItems: 'flex-end' }}><Image style={{ height: 20, width: 20, tintColor: colors.secondaryColor }} source={require('../assets/icons/home.png')} /></View></TouchableOpacity>
-                ),
+                ), */
                 headerLeft: () => (
                   <TouchableOpacity onPress={() => navigation.goBack()}><View style={{ height: 40, width: 40, justifyContent: 'center', alignItems: 'flex-start' }}><Image style={{ height: 18, width: 18, tintColor: colors.secondaryColor }} source={require('../assets/icons/back.png')} /></View></TouchableOpacity>
                 ),
               })} />
-              <Stack.Screen name="PrescriptionPage" component={PrescriptionPage}
+            <Stack.Screen name="PrescriptionPage" component={PrescriptionPage}
               options={({ navigation }) => ({
                 title: "Reçetem",
                 headerTitleStyle: {
@@ -138,9 +138,9 @@ const Router = ({ route, navigation }) => {
                 headerShadowVisible: false,
                 headerTitleAlign: 'center',
                 headerTintColor: "white",
-                headerRight: () => (
+                /* headerRight: () => (
                   <TouchableOpacity onPress={() => navigation.navigate("HomePage")}><View style={{ height: 40, width: 40, justifyContent: 'center', alignItems: 'flex-end' }}><Image style={{ height: 20, width: 20, tintColor: colors.secondaryColor }} source={require('../assets/icons/home.png')} /></View></TouchableOpacity>
-                ),
+                ), */
                 headerLeft: () => (
                   <TouchableOpacity onPress={() => navigation.goBack()}><View style={{ height: 40, width: 40, justifyContent: 'center', alignItems: 'flex-start' }}><Image style={{ height: 18, width: 18, tintColor: colors.secondaryColor }} source={require('../assets/icons/back.png')} /></View></TouchableOpacity>
                 ),
@@ -156,9 +156,9 @@ const Router = ({ route, navigation }) => {
                 headerShadowVisible: false,
                 headerTitleAlign: 'center',
                 headerTintColor: "white",
-                headerRight: () => (
+                /* headerRight: () => (
                   <TouchableOpacity onPress={() => navigation.navigate("HomePage")}><View style={{ height: 40, width: 40, justifyContent: 'center', alignItems: 'flex-end' }}><Image style={{ height: 20, width: 20, tintColor: colors.secondaryColor }} source={require('../assets/icons/home.png')} /></View></TouchableOpacity>
-                ),
+                ), */
                 headerLeft: () => (
                   <TouchableOpacity onPress={() => navigation.goBack()}><View style={{ height: 40, width: 40, justifyContent: 'center', alignItems: 'flex-start' }}><Image style={{ height: 18, width: 18, tintColor: colors.secondaryColor }} source={require('../assets/icons/back.png')} /></View></TouchableOpacity>
                 ),
@@ -174,9 +174,9 @@ const Router = ({ route, navigation }) => {
                 headerShadowVisible: false,
                 headerTitleAlign: 'center',
                 headerTintColor: "white",
-                headerRight: () => (
+                /* headerRight: () => (
                   <TouchableOpacity onPress={() => navigation.navigate("HomePage")}><View style={{ height: 40, width: 40, justifyContent: 'center', alignItems: 'flex-end' }}><Image style={{ height: 20, width: 20, tintColor: colors.secondaryColor }} source={require('../assets/icons/home.png')} /></View></TouchableOpacity>
-                ),
+                ), */
                 headerLeft: () => (
                   <TouchableOpacity onPress={() => navigation.goBack()}><View style={{ height: 40, width: 40, justifyContent: 'center', alignItems: 'flex-start' }}><Image style={{ height: 18, width: 18, tintColor: colors.secondaryColor }} source={require('../assets/icons/back.png')} /></View></TouchableOpacity>
                 ),

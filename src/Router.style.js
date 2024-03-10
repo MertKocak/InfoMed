@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Dimensions } from "react-native";
+import { Image, StyleSheet, Dimensions, Platform } from "react-native";
 import colors from "../src/colors";
 
 const windowWidth = Dimensions.get('window').width;
@@ -9,22 +9,26 @@ export default StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: "#1F1F1F",
+        opacity: 0.9
     },
     modalView: {
         alignContent: "center",
         backgroundColor: "white",
-        borderRadius: 8,
+        borderRadius: 12,
         width: windowWidth - 60,
         alignItems: 'center',
-        justifyContent: "space-between"
+        justifyContent: "space-between",
+        opacity: 1,
+        
     },
     button: {
         borderRadius: 50,
-        padding: 10,
         margin: 16,
         marginTop: 6,
-        width: 180,
-        height: 42
+        width: 120,
+        height: 40,
+        justifyContent: "center"
     },
     buttonClose: {
         backgroundColor: colors.primaryColor,
@@ -42,9 +46,9 @@ export default StyleSheet.create({
     modalText: {
         textAlignVertical: "center",
         padding: 14,
-        fontSize: 14,
+        fontSize: 12,
         color: colors.primaryColor,
-        fontFamily: "Raleway-Regular",
+        fontFamily: "Raleway-Medium",
         textAlign: 'center',
     },
     icon: {

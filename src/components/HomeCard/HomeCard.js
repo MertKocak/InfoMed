@@ -9,7 +9,8 @@ const HomeCard = ({title, desc, onPress, imgPath}) => {
         image2: require("../../../assets/icons/pills.png"),
         image3: require("../../../assets/icons/stethoscope.png"),
         image4: require("../../../assets/icons/fav.png"),  
-        image5: require("../../../assets/icons/drugs.png"),  
+        image5: require("../../../assets/icons/drugs.png"), 
+        image6: require("../../../assets/icons/prescription.png"), 
       };
 
     if(imgPath == "1"){
@@ -27,14 +28,21 @@ const HomeCard = ({title, desc, onPress, imgPath}) => {
     else if(imgPath == "5"){
         img = images.image5;
     }
+    else if(imgPath == "6"){
+        img = images.image6;
+    }
     
     return(
         <TouchableOpacity onPress={onPress}>
             
             <SafeAreaView style = {styles.container}>
+            <View>
             <Image style = {styles.image} source={img} />
+            </View>
+            <View>
             <Text style = {styles.title}>{title}</Text>
             <Text style = {styles.desc}>{desc}</Text>
+            </View>
         </SafeAreaView>
         </TouchableOpacity>
     );

@@ -12,7 +12,7 @@ export default StyleSheet.create({
 
     button: {
         height: 48,
-        width: windowWidth-24,
+        width: windowWidth - 24,
         backgroundColor: colors.primaryColor,
         justifyContent: "center",
         alignItems: "center",
@@ -43,57 +43,57 @@ export default StyleSheet.create({
         fontFamily: 'Raleway-Regular',
     },
     title: {
-        color: colors.primaryColor, 
+        color: colors.primaryColor,
         margin: 12,
         marginTop: 8,
-        marginBottom: 0, 
-        fontSize: 14, 
+        marginBottom: 0,
+        fontSize: 14,
         fontFamily: 'Raleway-Bold'
     },
     warning: {
-        flexDirection: "row", 
-        backgroundColor: "white", 
-        margin: 12, 
-        marginBottom: 0, 
-        marginTop: 6, 
+        flexDirection: "row",
+        backgroundColor: "white",
+        margin: 12,
+        marginBottom: 0,
+        marginTop: 6,
         borderRadius: 12,
     },
     warningIcon: {
-        height: 24, 
-        width: 24, 
+        height: 24,
+        width: 24,
         margin: 8,
-        marginTop: 4, 
-        marginLeft: 2, 
+        marginTop: 4,
+        marginLeft: 2,
         marginRight: 4,
         tintColor: colors.primaryColor
     },
     input: {
         backgroundColor: colors.secondaryColor,
-        height: 42,
-        width: windowWidth-100,
+        height: 38,
+        width: windowWidth - 100,
         borderRadius: 36,
-        fontSize: 16,
+        fontSize: 14,
         alignContent: "center",
         color: colors.primaryColor,
         fontFamily: 'Raleway-Regular',
-        paddingLeft: 10,
-        
-      },
-      searchBody: {
+        marginLeft: 6,
+
+    },
+    searchBody: {
         backgroundColor: colors.secondaryColor,
         flexDirection: "row",
         margin: 12,
         borderRadius: 36,
-        height: 44,
-        borderWidth: 1,
+        height: 40,
+        borderWidth: 0.8,
         borderColor: colors.primaryColor,
-        marginBottom: 0
-      },
-      searchIcon: {
-        height: 36,
-        width: 36,
+        marginBottom: 0,
+        alignItems: 'center',
+    },
+    searchIcon: {
+        height: 32,
+        width: 32,
         marginLeft: 6,
-        marginTop: 3,
-        tintColor: colors.primaryColor,
-      }
+        tintColor: colors.primaryColor
+    }
 })

@@ -10,7 +10,7 @@ export default StyleSheet.create({
         flex: 1
     },
     topContainer: {
-        height: windowHeight / 3.6,
+        height: windowHeight / 4,
         borderBottomLeftRadius: 32,
         borderBottomRightRadius: 32,
         backgroundColor: colors.primaryColor,
@@ -18,8 +18,8 @@ export default StyleSheet.create({
 
     },
     logoImage: {
-        height: windowHeight / 1.6,
-        width: windowWidth / 1.6,
+        height: windowHeight / 2,
+        width: windowWidth / 2,
         alignSelf: "center",
         objectFit: "contain",
         marginBottom: 48,

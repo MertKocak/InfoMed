@@ -33,7 +33,7 @@ export default function (state = initialState, action) {
                 return { ...state, prescriptionList: [...state.prescriptionList, newPrescriptionList.title] }
             }
             else {   
-                Alert.alert("Eklenenemedi", "İlaç zaten sık kullanılanlar listenizde ekli." , [
+                Alert.alert("Eklenenemedi", "İlaç zaten reçetenizde ekli." , [
                     {text: 'TAMAM', onPress: () => console.log('OK Pressed')},
                   ] );
                 return state;
@@ -80,7 +80,7 @@ export default function (state = initialState, action) {
             }
             
         case 'REMOVE_FAV':
-            Alert.alert("Silindi", "İlaç sık kullanılanlarınızdan silindi.", [
+            Alert.alert("Silindi", "İlaç sık kullanılanlar listenizden silindi.", [
                 { text: 'TAMAM', onPress: () => console.log('OK Pressed') },
             ]), 
                 console.log("B1")
