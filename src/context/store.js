@@ -6,7 +6,7 @@ import rootReducer from "./reducers"
 const persistConfig = {
     key: 'root',
     storage: AsyncStorage,
-    whitelist: ['favDrugsList', 'newDrugsList', 'prescriptionList', 'newPrescriptionList'],
+    whitelist: ['favDrugsList', 'newDrugsList', 'prescriptionList', 'newPrescriptionList', 'prescriptionListid', 'newPrescriptionListid'],
     
   };
 

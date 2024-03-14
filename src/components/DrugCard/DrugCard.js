@@ -1,11 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, SafeAreaView, View, TouchableOpacity, TouchableWithoutFeedback, Image, Alert } from 'react-native';
+import { StyleSheet, Text, SafeAreaView, View, TouchableOpacity, TouchableWithoutFeedback, Image, Alert, ToastAndroid  } from 'react-native';
 import styles from "./DrugCard.style"
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useState } from 'react';
 import { UseSelector } from 'react-redux';
-
+import Toast from 'react-native-toast-message';
 import { UseDispatch, useDispatch } from 'react-redux';
 import colors from '../../colors';
 
@@ -78,7 +78,6 @@ const DrugCard = ({ data, onPress, favorite }) => {
     else if (data.id == 16) {
         img = images.metsil;
     }
-
 
     const dispatch = useDispatch();
 

@@ -83,6 +83,7 @@ const InfoPage = ({ route, navigation }) => {
 
     const handleAddPrescription = () => {
         dispatch({ type: "ADD_PRESCRIPTION", payload: { drug: route.params } });
+        dispatch({ type: "ADD_PRESCRIPTION_ID", payload: { drug: route.params } });
     }
 
     const handleAddFav = () => {

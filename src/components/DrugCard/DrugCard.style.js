@@ -44,7 +44,7 @@ export default StyleSheet.create({
         marginRight: 6,
         flexDirection: "row",
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
 
     },
     icon: {

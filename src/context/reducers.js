@@ -1,10 +1,15 @@
 import React from 'react';
-import { Alert } from 'react-native';
+import Toast from 'react-native-toast-message';
+import { Alert, ToastAndroid  } from 'react-native';
 
 const initialState = {
     favDrugsList: [],
     prescriptionList: [],
 };
+
+const showToast = (title) => {
+    ToastAndroid.show(title, ToastAndroid.SHORT);
+  };
 
 export default function (state = initialState, action) {
     switch (action.type) {
@@ -16,10 +21,7 @@ export default function (state = initialState, action) {
             });
             console.log(prescriptionCheck)
             if (!prescriptionCheck) {
-                Alert.alert("Eklendi", "İlaç reçetenize eklendi." , [
-                    {text: 'TAMAM', onPress: () => console.log('OK Pressed')
-                    },
-                  ] ),
+                showToast("İlaç reçetenize eklendi.");
                 console.log("r1");
                 var newPrescriptionList = [];
                 newPrescriptionList.id = action.payload.drug.id;
@@ -32,16 +34,18 @@ export default function (state = initialState, action) {
             
                 return { ...state, prescriptionList: [...state.prescriptionList, newPrescriptionList.title] }
             }
-            else {   
-                Alert.alert("Eklenenemedi", "İlaç zaten reçetenizde ekli." , [
+            else {  
+                showToast("İlaç zaten reçetenizde ekli."); 
+               /*  Alert.alert("Eklenenemedi", "İlaç zaten reçetenizde ekli." , [
                     {text: 'TAMAM', onPress: () => console.log('OK Pressed')},
-                  ] );
+                  ] ); */
                 return state;
             }
             case 'REMOVE_PRESCRIPTION':
-            Alert.alert("Silindi", "İlaç reçetenizden silindi.", [
+                showToast("İlaç reçetenizden silindi.");
+            /* Alert.alert("Silindi", "İlaç reçetenizden silindi.", [
                 { text: 'TAMAM', onPress: () => console.log('OK Pressed') },
-            ]), 
+            ]),  */
                 console.log("B1")
             return {
                 ...state, prescriptionList: [
@@ -56,10 +60,11 @@ export default function (state = initialState, action) {
             });
             console.log(favCheck)
             if (!favCheck) {
-                Alert.alert("Eklendi", "İlaç kaydedilenler listenize eklendi." , [
+                showToast("İlaç kaydedilenler listenize eklendi.");
+                /* Alert.alert("Eklendi", "İlaç kaydedilenler listenize eklendi." , [
                     {text: 'TAMAM', onPress: () => console.log('OK Pressed')
                     },
-                  ] ),
+                  ] ), */
                 console.log("A1");
                 var newDrugsList = [];
                 newDrugsList.id = action.payload.drug.id;
@@ -72,17 +77,19 @@ export default function (state = initialState, action) {
             
                 return { ...state, favDrugsList: [...state.favDrugsList, newDrugsList.title] }
             }
-            else {   
-                Alert.alert("Eklenenemedi", "İlaç zaten kaydedilenler listenizde ekli." , [
+            else {  
+                showToast("İlaç zaten kaydedilenler listenizde ekli.");
+               /*  Alert.alert("Eklenenemedi", "İlaç zaten kaydedilenler listenizde ekli." , [
                     {text: 'TAMAM', onPress: () => console.log('OK Pressed')},
-                  ] );
+                  ] ); */
                 return state;
             }
             
         case 'REMOVE_FAV':
-            Alert.alert("Silindi", "İlaç kaydedilenler listenizden silindi.", [
+            showToast("İlaç kaydedilenler listenizden silindi.")
+           /*  Alert.alert("Silindi", "İlaç kaydedilenler listenizden silindi.", [
                 { text: 'TAMAM', onPress: () => console.log('OK Pressed') },
-            ]), 
+            ]),  */
                 console.log("B1")
             return {
                 ...state, favDrugsList: [

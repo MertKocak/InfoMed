@@ -43,24 +43,6 @@ const PrescriptionPage = ({ navigation }) => {
 
     const prescriptionList = useSelector(state => state.prescriptionList);
 
-
-    const onPressDrug = ([id, title, description, image, price, etkenmadde, muadili, isFav]) => {
-        return (
-            navigation.navigate('InfoPage', {
-                id: id,
-                title: title,
-                description: description,
-                image: image,
-                price: price,
-                etkenmadde: etkenmadde,
-                muadili: muadili,
-                isFav: isFav,
-            }
-            ))
-    };
-
-   
-
     return (
         <ScrollView style={styles.body}>
             <SafeAreaView >
