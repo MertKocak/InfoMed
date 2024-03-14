@@ -35,8 +35,7 @@ const DrugSearchPage = ({ item, navigation, route }) => {
         image: image,
         price: price,
         etkenmadde: etkenmadde,
-        muadili: muadili,
-        isFav: isFav,
+        barcode: barcode,
       }
       ))
   };
@@ -50,7 +49,7 @@ const DrugSearchPage = ({ item, navigation, route }) => {
             <View><SearchBar onSearch={handleSearch} /></View>
           }
           data={listE}
-          renderItem={({ item }) => <DrugCard data={item} favorite={false} onPress={() => onPressDrug([item.id, item.title, item.description, item.image, item.price, item.etkenmadde, item.muadili, item.isFav])} />}
+          renderItem={({ item }) => <DrugCard data={item} favorite={false} onPress={() => onPressDrug([item.id, item.title, item.description, item.image, item.price, item.etkenmadde, item.barcode])} />}
         />
       </View>
     </SafeAreaView>

@@ -16,6 +16,7 @@ import { store, persistor } from "./context/store";
 import colors from './colors';
 import styles from "./Router.style"
 import PrescriptionPage from './pages/PrescriptionPage';
+import BarcodeScannerPage from './pages/BarcodeScannerPage';
 
 const Router = ({ route, navigation }) => {
 
@@ -87,6 +88,21 @@ const Router = ({ route, navigation }) => {
                 /*  headerRight: () => (
                    <TouchableOpacity onPress={() => navigation.navigate("FavoritesPage")}><View style={{ height: 40, width: 40, justifyContent: 'center', alignItems: 'flex-end' }}><Image style={{ height: 20, width: 20, tintColor: colors.secondaryColor }} source={require('../assets/icons/favorite.png')} /></View></TouchableOpacity>
                  ), */
+                headerLeft: () => (
+                  <TouchableOpacity onPress={() => navigation.goBack()}><View style={{ height: 40, width: 40, justifyContent: 'center', alignItems: 'flex-start' }}><Image style={{ height: 18, width: 18, tintColor: colors.secondaryColor }} source={require('../assets/icons/back.png')} /></View></TouchableOpacity>
+                ),
+              })} />
+              <Stack.Screen name="BarcodeScannerPage" component={BarcodeScannerPage}
+              options={({ navigation }) => ({
+                title: "Barkod Okut",
+                headerTitleStyle: {
+                  fontFamily: 'Raleway-SemiBold',
+                  fontSize: 15
+                },
+                headerStyle: { backgroundColor: colors.primaryColor },
+                headerShadowVisible: false,
+                headerTitleAlign: 'center',
+                headerTintColor: "white",
                 headerLeft: () => (
                   <TouchableOpacity onPress={() => navigation.goBack()}><View style={{ height: 40, width: 40, justifyContent: 'center', alignItems: 'flex-start' }}><Image style={{ height: 18, width: 18, tintColor: colors.secondaryColor }} source={require('../assets/icons/back.png')} /></View></TouchableOpacity>
                 ),

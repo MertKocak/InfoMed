@@ -11,6 +11,7 @@ const HomeCard = ({title, desc, onPress, imgPath}) => {
         image4: require("../../../assets/icons/fav.png"),  
         image5: require("../../../assets/icons/drugs.png"), 
         image6: require("../../../assets/icons/prescription.png"), 
+        image7: require("../../../assets/icons/barcode.png"), 
       };
 
     if(imgPath == "1"){
@@ -30,6 +31,9 @@ const HomeCard = ({title, desc, onPress, imgPath}) => {
     }
     else if(imgPath == "6"){
         img = images.image6;
+    }
+    else if(imgPath == "7"){
+        img = images.image7;
     }
     
     return(

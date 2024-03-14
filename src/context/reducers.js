@@ -152,3 +152,148 @@ export default function (state = initialState, action) {
                 return state;
             }
  */
+
+            /***
+             *    ********************id*********************** *
+        case "ADD_FAV_ID":
+            var favCheck = false;
+            console.log(favCheck);
+            [...state.idList].map(function (item, index) {
+                (item == action.payload.drug.id) ? favCheck = true : favCheck = favCheck;
+            });
+            console.log(favCheck)
+            if (!favCheck) {
+                console.log("id eklendi");
+                var newidList = [];
+                newidList.id = action.payload.drug.id;            
+                return { ...state, idList: [...state.idList, newidList.id] }
+            }
+            else {  
+                console.log("zaten id ekli");
+                return state;
+            }
+            
+        case 'REMOVE_FAV_ID':
+                console.log("id silindi")
+            return {
+                ...state, idList: [
+                    ...state.idList.filter(drug => drug !== action.payload.drug),
+                ],
+            };
+            ***********************price*************************
+        case "ADD_FAV_PRICE":
+            var favCheck = false;
+            console.log(favCheck);
+            [...state.priceList].map(function (item, index) {
+                (item == action.payload.drug.price) ? favCheck = true : favCheck = favCheck;
+            });
+            console.log(favCheck)
+            if (!favCheck) {
+                console.log("price eklendi");
+                var newPriceList = [];
+                newPriceList.price = action.payload.drug.price;            
+                return { ...state, priceList: [...state.priceList, newPriceList.price] }
+            }
+            else {  
+                console.log("zaten price ekli");
+                return state;
+            }
+            
+        case 'REMOVE_FAV_PRICE':
+                console.log("price silindi")
+            return {
+                ...state, priceList: [
+                    ...state.priceList.filter(drug => drug !== action.payload.drug),
+                ],
+            };
+            *****************description********************** 
+        case "ADD_FAV_DESC":
+            var favCheck = false;
+            console.log(favCheck);
+            [...state.descList].map(function (item, index) {
+                (item == action.payload.drug.description) ? favCheck = true : favCheck = favCheck;
+            });
+            console.log(favCheck)
+            if (!favCheck) {
+                var newDescList = [];
+                newDescList.description = action.payload.drug.description;            
+                return { ...state, descList: [...state.descList, newDescList.description] }
+            }
+            else {  
+                return state;
+            }
+            
+        case 'REMOVE_FAV_DESC':
+            return {
+                ...state, descList: [
+                    ...state.descList.filter(drug => drug !== action.payload.drug),
+                ],
+            };
+            ****************img*******************
+        case "ADD_FAV_IMG":
+            var favCheck = false;
+            console.log(favCheck);
+            [...state.imgList].map(function (item, index) {
+                (item == action.payload.drug.image) ? favCheck = true : favCheck = favCheck;
+            });
+            console.log(favCheck)
+            if (!favCheck) {
+                var newImgList = [];
+                newImgList.id = action.payload.drug.id;            
+                return { ...state, imgList: [...state.imgList, newImgList.image] }
+            }
+            else {  
+                return state;
+            }
+            
+        case 'REMOVE_FAV_IMG':
+            return {
+                ...state, imgList: [
+                    ...state.imgList.filter(drug => drug !== action.payload.drug),
+                ],
+            };
+        ***************etkenmadde************************ 
+        case "ADD_FAV_EM":
+            var favCheck = false;
+            console.log(favCheck);
+            [...state.emList].map(function (item, index) {
+                (item == action.payload.drug.etkenmadde) ? favCheck = true : favCheck = favCheck;
+            });
+            console.log(favCheck)
+            if (!favCheck) {
+                var newEMList = [];
+                newEMList.id = action.payload.drug.id;            
+                return { ...state, emList: [...state.emList, newEMList.etkenmadde] }
+            }
+            else {  
+                return state;
+            }
+        case 'REMOVE_FAV_EM':
+            return {
+                ...state, emList: [
+                    ...state.emList.filter(drug => drug !== action.payload.drug),
+                ],
+            };
+            ***************barcode************************ 
+        case "ADD_FAV_BARCODE":
+            var favCheck = false;
+            console.log(favCheck);
+            [...state.barcodeList].map(function (item, index) {
+                (item == action.payload.drug.barcode) ? favCheck = true : favCheck = favCheck;
+            });
+            console.log(favCheck)
+            if (!favCheck) {
+                var newBarcodeList = [];
+                newBarcodeList.id = action.payload.drug.id;            
+                return { ...state, barcodeList: [...state.barcodeList, newBarcodeList.barcode] }
+            }
+            else {  
+                return state;
+            }
+        case 'REMOVE_FAV_BARCODE':
+            return {
+                ...state, barcodeList: [
+                    ...state.barcodeList.filter(drug => drug !== action.payload.drug),
+                ],
+            };
+            ****/

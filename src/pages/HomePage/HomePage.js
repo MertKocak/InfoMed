@@ -71,6 +71,10 @@ const HomePage = ({ route, navigation }) => {
                         <HomeCard title={"Semptom"} desc={"Sahip olduğunuz belirtileri aratarak ilaç önerisi alabilirsiniz"} imgPath={"3"} onPress={() => onPressButton("IndicationPage")}></HomeCard>
                         <HomeCard title={"Muadil İlaç"} desc={"Girmiş olduğunuz ilaca eşdeğer ilaç önerisi alabilirsiniz"} imgPath={"5"} onPress={() => onPressButton("EquivalentPage")}></HomeCard>
                     </View>
+                    <View>
+                    <HomeCard title={"Barkod Okut"} desc={"Prospektüs bilgilerine erişmek istediğiniz ilacın barkodunu okutabilirsiniz"} imgPath={"7"} onPress={() => onPressButton("BarcodeScannerPage")}></HomeCard>
+
+                    </View>
                 </SafeAreaView>
             </PersistGate>
         </Provider>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView, View, TouchableOpacity, TouchableWithoutFeedback, Image, Alert, ToastAndroid  } from 'react-native';
-import styles from "./DrugCard.style"
+import styles from "./BarcodeCard.style"
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useState } from 'react';
@@ -9,7 +9,7 @@ import Toast from 'react-native-toast-message';
 import { UseDispatch, useDispatch } from 'react-redux';
 import colors from '../../colors';
 
-const DrugCard = ({ data, onPress, favorite }) => {
+const BarcodeCard = ({ data, onPress, favorite }) => {
 
     const images = {
         parol: require("../../../assets/drug_images/parol.jpg"),
@@ -83,13 +83,6 @@ const DrugCard = ({ data, onPress, favorite }) => {
 
     const handleAddFav = () => {
         dispatch({ type: "ADD_FAV", payload: { drug: data } });
-        dispatch({ type: "ADD_FAV_ID", payload: { drug: data } });
-        dispatch({ type: "ADD_FAV_PRICE", payload: { drug: data } });
-        dispatch({ type: "ADD_FAV_DESC", payload: { drug: data } });
-        dispatch({ type: "ADD_FAV_IMG", payload: { drug: data } });
-        dispatch({ type: "ADD_FAV_EM", payload: { drug: data } });
-        dispatch({ type: "ADD_FAV_BARCODE", payload: { drug: data } });
-
     }
 
     const handleAddPrescription = () => {
@@ -105,12 +98,12 @@ const DrugCard = ({ data, onPress, favorite }) => {
                         <Text style={styles.title} numberOfLines={2}>{data.title}</Text>
                         <Text style={styles.price}>Fiyat: {data.price} ₺</Text>
                     </SafeAreaView>
-                    <SafeAreaView style={styles.fav_container}>
+                    {/* <SafeAreaView style={styles.fav_container}>
                         <TouchableOpacity onPress={handleAddFav}>
                             <Image style={styles.icon} source={require("../../../assets/icons/save.png")} /></TouchableOpacity>
                             <TouchableOpacity onPress={handleAddPrescription}>
                             <Image style={styles.icon} source={require("../../../assets/icons/addprescription.png")} /></TouchableOpacity>
-                    </SafeAreaView>
+                    </SafeAreaView> */}
                 </SafeAreaView>
             </TouchableWithoutFeedback>
         </SafeAreaView>
@@ -118,4 +111,4 @@ const DrugCard = ({ data, onPress, favorite }) => {
 
 }
 
-export default DrugCard;
+export default BarcodeCard;

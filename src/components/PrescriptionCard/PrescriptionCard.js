@@ -49,7 +49,12 @@ const PrescriptionCard = ({ data, onPress }) => {
         <TouchableWithoutFeedback onPress={onPress}>
             <SafeAreaView style={styles.container}>
                
-               <View style={{flex: 1}}>
+               <View style={{flex: 1, flexDirection: 'row'}}>
+               <SafeAreaView style={styles.date_container}>
+                        <TouchableOpacity onPress={openDatepicker}>
+                            <Image style={{ height: 28, width: 28, alignItems: 'center', tintColor: colors.primaryColor }} source={require("../../../assets/icons/reminder.png")} />
+                        </TouchableOpacity>
+                    </SafeAreaView> 
                     <SafeAreaView style={styles.body_container}>
                         <Text style={styles.title} numberOfLines={2}>{data}</Text>
                     </SafeAreaView>
@@ -62,12 +67,6 @@ const PrescriptionCard = ({ data, onPress }) => {
                     
                 </View>
                 <View style = {styles.edit_container}>
-                <SafeAreaView style={styles.trash_container}>
-                        <TouchableOpacity onPress={openDatepicker}>
-                            <Image style={{ height: 20, width: 20, alignItems: 'center', tintColor: colors.primaryColor }} source={require("../../../assets/icons/reminder.png")} />
-                        </TouchableOpacity>
-                    </SafeAreaView> 
-                    
                 <Modal
                     animationType="fade"
                     transparent={true}
@@ -88,9 +87,12 @@ const PrescriptionCard = ({ data, onPress }) => {
                         </View>
                     </View>
                 </Modal>
+               
+                    
+                
                     <SafeAreaView style={styles.trash_container}>
                         <TouchableOpacity onPress={() => handleRemovePres(data)}>
-                            <Image style={{ height: 22, width: 22, alignItems: 'center', tintColor: colors.primaryColor }} source={require("../../../assets/icons/trash.png")} />
+                            <Image style={{ height: 26, width: 26, alignItems: 'center', tintColor: colors.primaryColor }} source={require("../../../assets/icons/trash.png")} />
                         </TouchableOpacity>
                     </SafeAreaView> 
                 </View>

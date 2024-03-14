@@ -8,7 +8,7 @@ import colors from '../../colors';
 import { UseDispatch, useDispatch } from 'react-redux';
 
 const InfoPage = ({ route, navigation }) => {
-    const { id, title, description, image, price, etkenmadde, muadili } = route.params;
+    const { id, title, description, image, price, etkenmadde, barcode } = route.params;
 
     const images = {
         parol: require("../../../assets/drug_images/parol.jpg"),
@@ -83,7 +83,6 @@ const InfoPage = ({ route, navigation }) => {
 
     const handleAddPrescription = () => {
         dispatch({ type: "ADD_PRESCRIPTION", payload: { drug: route.params } });
-        dispatch({ type: "ADD_PRESCRIPTION_ID", payload: { drug: route.params } });
     }
 
     const handleAddFav = () => {

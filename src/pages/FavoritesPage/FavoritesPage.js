@@ -9,6 +9,8 @@ const FavoritesPage = ({ item, navigation }) => {
 
   const list = useSelector(state => state.favDrugsList);
   console.log(list);
+
+  
     
   return (
       <SafeAreaView style={styles.body}>

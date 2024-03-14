@@ -23,7 +23,6 @@ export default StyleSheet.create({
     },
     title: {
         color: colors.primaryColor,
-        paddingLeft: 12,
         justifyContent: "center",
         fontSize: 14,
         height: 40,
@@ -33,8 +32,11 @@ export default StyleSheet.create({
     },
     trash_container: {
         justifyContent: "center",
-        marginRight: 4,
-
+    },
+    date_container: {
+        justifyContent: "center",
+        marginLeft: 12,
+        marginRight: 12,
     },
     datePicker: {
         height: 160,
