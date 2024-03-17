@@ -26,7 +26,7 @@ const DrugSearchPage = ({ item, navigation, route }) => {
     setListE(filteredList);
   };
 
-  const onPressDrug = ([id, title, description, image, price, etkenmadde, muadili, isFav]) => {
+  const onPressDrug = ([id, title, description, image, price, etkenmadde, barcode]) => {
     return (
       navigation.navigate('InfoPage', {
         id: id,
@@ -49,7 +49,7 @@ const DrugSearchPage = ({ item, navigation, route }) => {
             <View><SearchBar onSearch={handleSearch} /></View>
           }
           data={listE}
-          renderItem={({ item }) => <DrugCard data={item} favorite={false} onPress={() => onPressDrug([item.id, item.title, item.description, item.image, item.price, item.etkenmadde, item.barcode])} />}
+          renderItem={({ item }) => <DrugCard data={item} onPress={() => onPressDrug([item.id, item.title, item.description, item.image, item.price, item.etkenmadde, item.barcode])} />}
         />
       </View>
     </SafeAreaView>

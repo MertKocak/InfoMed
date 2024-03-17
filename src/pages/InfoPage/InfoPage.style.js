@@ -20,21 +20,23 @@ export default StyleSheet.create({
         height: 186,
     },
     body_container: {
-        padding: 12,
+        paddingLeft: 12,
+        paddingRight: 12,
         flex: 1,
         justifyContent: "flex-start",
         flexDirection: "column",
     },
     title: {
         color: colors.primaryColor,
+        marginTop: 4,
         fontSize: 14,
         fontFamily: 'Raleway-Bold',
     },
     price: {
         color: colors.primaryColor,
         fontSize: 14,
-        marginTop: 2,
-        fontFamily: 'Raleway-Regular',
+        marginTop: 8,
+        fontFamily: 'Raleway-Medium',
     },
     image: {
         height: 108,
@@ -51,26 +53,25 @@ export default StyleSheet.create({
         paddingRight: 12,
     },
     subtitle: {
-        marginTop: 4,
+        marginTop: 6,
+        marginBottom: 2,
         color: colors.primaryColor,
         fontSize: 14,
         fontFamily: 'Raleway-SemiBold',
     },
     subtitle2: {
-        marginTop: 6,
+        marginTop: 8,
         color: colors.primaryColor,
         fontSize: 14,
-        fontFamily: 'Raleway-SemiBold',
+        fontFamily: 'Raleway-Medium',
     },
     contents: {
-        marginTop: 0,
         color: "#191919",
         fontSize: 14,
         fontFamily: 'Raleway-Regular',
     },
     contents2: {
-        marginLeft: 6,
-        marginTop: 6,
+        marginTop: 8,
         color: "#191919",
         fontSize: 14,
         fontFamily: 'Raleway-Regular',
@@ -80,13 +81,13 @@ export default StyleSheet.create({
         margin: 12,
         marginLeft: 0,
         marginRight: 0,
-        justifyContent: "center"
+        justifyContent: "space-between"
 
     },
     addFavButton: {
         backgroundColor: colors.primaryColor,
         height: 42,
-        width: (windowWidth - 48) / 2,
+        width: (windowWidth - 60) / 2,
         borderRadius: 20,
         flexDirection: "row",
         justifyContent: "center",
@@ -95,7 +96,7 @@ export default StyleSheet.create({
     addPresButton: {
         backgroundColor: colors.primaryColor,
         height: 42,
-        width: (windowWidth - 48) / 2,
+        width: (windowWidth - 60) / 2,
         borderRadius: 20,
         marginLeft: 6,
         flexDirection: "row",
@@ -114,6 +115,6 @@ export default StyleSheet.create({
         marginBottom: 2,
         color: colors.secondaryColor,
         fontFamily: "Raleway-SemiBold",
-        fontSize: 11,
+        fontSize: 12,
     },
 })

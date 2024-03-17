@@ -92,7 +92,7 @@ const BarcodeScannerPage = ({ item, navigation, route }) => {
             buttonNegative: 'Cancel',
           }}
         />
-          <TouchableOpacity style={{alignSelf:'flex-start'}} onPress={() => setFlash(!flash)}>
+          <TouchableOpacity style={{alignSelf:'center'}} onPress={() => setFlash(!flash)}>
             <View style={styles.flash}>
               
                 {flash ? <Image style={styles.flashIcon} source={require("../../../assets/icons/flashOff.png")} /> : <Image  style={styles.flashIcon}  source={require("../../../assets/icons/flashOn.png")} />}
@@ -124,3 +124,13 @@ export default BarcodeScannerPage;
 /***<Text style={styles.contentStyle}>
                 {`Data: ${barValue}`}
             </Text> */
+
+            /***
+             * {flash ? <View style={{flexDirection: 'row'}}>
+                  <Image style={styles.flashIcon} source={require("../../../assets/icons/flashOff.png")} />
+                  <Text>Flash Kapat</Text>
+                </View> : <View style={{flexDirection: 'row'}}>
+                  <Image style={styles.flashIcon} source={require("../../../assets/icons/flashOn.png")} />
+                  <Text>Flash Aç</Text>
+                </View>}
+             */

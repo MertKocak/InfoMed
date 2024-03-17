@@ -93,18 +93,23 @@ const InfoPage = ({ route, navigation }) => {
         <ScrollView style={styles.body}>
             <SafeAreaView style={styles.body}>
                 <SafeAreaView style={styles.top_container}>
-                    <View style = {{flexDirection: 'row'}}>
-                    <Image style={styles.image} source={img} />
-                    <View style={styles.body_container}>
-                        <Text style={styles.title}>{title}</Text>
-                        <Text style={styles.price}>Fiyat: {price} ₺</Text>
-                    </View>
+                    <View style={{ flexDirection: 'row' }}>
+                        <Image style={styles.image} source={img} />
+                        <View style={styles.body_container}>
+                            <Text style={styles.title}>{title}</Text>
+                            <Text style={styles.price}>Fiyat: {price} ₺</Text>
+
+                            <View style={{ flexDirection: 'row' }}>
+                                <Text style={styles.subtitle2}>Barkod: </Text>
+                                <Text style={styles.contents2}>{barcode}</Text>
+                            </View>
+                        </View>
                     </View>
                     <View style={styles.buttonsContainer}>
                         <TouchableOpacity onPress={handleAddFav}>
                             <View style={styles.addFavButton}>
                                 <Image style={styles.buttonIcon} source={require("../../../assets/icons/save.png")} />
-                                <Text style={styles.buttonText} >Kaydedilenlere Ekle</Text>
+                                <Text style={styles.buttonText} >Kaydet</Text>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity onPress={handleAddPrescription}>
@@ -118,8 +123,18 @@ const InfoPage = ({ route, navigation }) => {
 
                 <SafeAreaView style={styles.bottom_container}>
                     <View style={{ flexDirection: 'row' }}>
-                        <Text style={styles.subtitle2}>Etken Madde:</Text>
-                        <Text style={styles.contents2}>{etkenmadde}</Text>
+                        <Text style={{
+                            marginTop: 8,
+                            color: colors.primaryColor,
+                            fontSize: 14,
+                            fontFamily: 'Raleway-SemiBold',
+                        }}>Etken Madde: </Text>
+                        <Text style={{
+                            marginTop: 8,
+                            color: "#191919",
+                            fontSize: 14,
+                            fontFamily: 'Raleway-Regular',
+                        }}>{etkenmadde}</Text>
                     </View>
                     <Text style={styles.subtitle}>Kullanım Talimatları:</Text>
                     <Text style={styles.contents}>{description}</Text>

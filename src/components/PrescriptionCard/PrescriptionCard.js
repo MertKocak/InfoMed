@@ -27,18 +27,13 @@ const PrescriptionCard = ({ data, onPress }) => {
     console.log(date);
 
     const showToast = (title) => {
-        ToastAndroid.show(title, ToastAndroid.SHORT);
+        ToastAndroid.show(title + "için hatırlatıcı kaydedildi", ToastAndroid.SHORT);
       };
 
     const setNotification = (title, message) => {
         setModalVisible(!modalVisible);
-        
         Notifications.schduleNotification(date, title, message);
-        Alert.alert(data, "Hatırlatıcı " + date.getHours().toString() + ":" + date.getMinutes().toString() + " için ayarlandı.", [
-            {
-                text: 'TAMAM', onPress: () => console.log('OK Pressed')
-            },
-        ]);
+        showToast(title);
     };
 
     const openDatepicker = () => {
@@ -49,12 +44,7 @@ const PrescriptionCard = ({ data, onPress }) => {
         <TouchableWithoutFeedback onPress={onPress}>
             <SafeAreaView style={styles.container}>
                
-               <View style={{flex: 1, flexDirection: 'row'}}>
-               <SafeAreaView style={styles.date_container}>
-                        <TouchableOpacity onPress={openDatepicker}>
-                            <Image style={{ height: 28, width: 28, alignItems: 'center', tintColor: colors.primaryColor }} source={require("../../../assets/icons/reminder.png")} />
-                        </TouchableOpacity>
-                    </SafeAreaView> 
+               <View style={{flex: 1}}>
                     <SafeAreaView style={styles.body_container}>
                         <Text style={styles.title} numberOfLines={2}>{data}</Text>
                     </SafeAreaView>
@@ -81,15 +71,17 @@ const PrescriptionCard = ({ data, onPress }) => {
                     </View>
                             <TouchableOpacity
                                 style={[styles.buttonPopup, styles.buttonClose]}
-                                onPress={() => setNotification(data , " ilacını alma zamanı!")}>
+                                onPress={() => setNotification("İlaç Hatırlatıcısı" , data)}>
                                 <Text style={styles.textStyle}>Kaydet</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
                 </Modal>
-               
-                    
-                
+                <SafeAreaView style={styles.trash_container}>
+                        <TouchableOpacity onPress={openDatepicker}>
+                            <Image style={{ height: 24, width: 24, alignItems: 'center', tintColor: colors.primaryColor }} source={require("../../../assets/icons/reminder.png")} />
+                        </TouchableOpacity>
+                    </SafeAreaView> 
                     <SafeAreaView style={styles.trash_container}>
                         <TouchableOpacity onPress={() => handleRemovePres(data)}>
                             <Image style={{ height: 26, width: 26, alignItems: 'center', tintColor: colors.primaryColor }} source={require("../../../assets/icons/trash.png")} />
@@ -100,23 +92,15 @@ const PrescriptionCard = ({ data, onPress }) => {
                 <View style={{
                     flexDirection: 'row',justifyContent: 'space-between', backgroundColor: "red"
                 }}>
-                    
-                    
                     {/* <TouchableOpacity onPress={openDatepicker}>
                         <View style={styles.button}>
                             <Text style={styles.buttonText}>Hatırlatıcı Ayarla</Text>
                         </View>
                     </TouchableOpacity> */}
                 </View>
-                
             </SafeAreaView>
         </TouchableWithoutFeedback>
     );
 }
 
 export default PrescriptionCard;
-
-/**
- * 
-               
- */

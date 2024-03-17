@@ -45,7 +45,7 @@ export default StyleSheet.create({
         color: colors.primaryColor, 
         margin: 12,
         marginTop: 8,
-        marginBottom: 0, 
+        marginBottom: 6, 
         fontSize: 14, 
         fontFamily: 'Raleway-Bold'
     },

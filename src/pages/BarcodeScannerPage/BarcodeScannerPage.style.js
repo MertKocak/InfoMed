@@ -6,27 +6,23 @@ const windowHeight = Dimensions.get('window').height;
 
 export default StyleSheet.create({
     body: {
-        backgroundColor: "white",    
+        backgroundColor: colors.primaryColor,    
         flex: 1
     },
     container: { 
+        
         flex: 1, 
         alignItems: 'center', 
         justifyContent: 'center',
         margin: 0,
-        marginTop: 0,
         
     },
     flash: {
         height: 60, 
-        width: 60, 
+        width: windowWidth, 
         backgroundColor: colors.primaryColor, 
-        marginTop: -85,
-        marginBottom: 25,
-        marginLeft: 25,
         justifyContent: "center",
         alignItems: "center",
-        borderRadius: 50,
     },
     flashText: {
         fontFamily: "Raleway-Bold",

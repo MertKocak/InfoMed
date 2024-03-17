@@ -12,6 +12,7 @@ const EquivalentPage = ({ navigation }) => {
     const [list, setList] = useState(drug_data);
     const [listE, setListE] = useState([]);
     const [text, setText] = useState("");
+    const [isOk, setisOk] = useState(false);
 
     const onPress = () => {
         const filteredList = drug_data.filter(
@@ -22,6 +23,14 @@ const EquivalentPage = ({ navigation }) => {
             }
         );
         setListE(filteredList);
+
+        if (filteredList == "" || null) {
+            setisOk(true)
+        }
+        else (
+            setisOk(false)
+        );
+        console.log("isOK: " + isOk)
     }
 
     const onPressDrug = ([id, title, description, image, price, etkenmadde, muadili, isFav]) => {
@@ -60,11 +69,16 @@ const EquivalentPage = ({ navigation }) => {
                     <Text style={styles.title}>
                         Muadil İlaç/İlaçlar:
                     </Text>
-                    <FlatList
-                        contentContainerStyle={{ paddingBottom: 12 }}
-                        data={listE}
-                        renderItem={({ item }) => <DrugCard data={item} favorite={false} onPress={() => onPressDrug([item.id, item.title, item.description, item.image, item.price, item.etkenmadde, item.muadili, item.isFav])} />}
-                    />
+                    {isOk ? <View style={{ flexDirection: "column", justifyContent: 'center', alignItems: 'center' }}>
+                        <Image style={{ tintColor: colors.primaryColor, marginTop: 40, height: 28, width: 28 }} source={require("../../../assets/icons/foundError.png")} />
+                        <Text style={{ fontFamily: "Raleway-Medium", alignSelf: 'center', textAlign: 'center', borderRadius: 12, marginLeft: 12, marginRight: 12, marginTop: 12, fontSize: 12, color: colors.primaryColor }} >Aradığınız ilaç için uygun muadil ilaç bulunamadı.</Text>
+                        <Text style={{ fontFamily: "Raleway-Medium", alignSelf: 'center', textAlign: 'center', borderRadius: 12, marginLeft: 12, marginRight: 12, marginTop: 0, fontSize: 12, color: colors.primaryColor }} >Lütfen ilaç ismini doğru yazdığınızdan emin olunuz.</Text>
+                    </View>
+                        : <FlatList
+                            contentContainerStyle={{ paddingBottom: 12 }}
+                            data={listE}
+                            renderItem={({ item }) => <DrugCard data={item} favorite={false} onPress={() => onPressDrug([item.id, item.title, item.description, item.image, item.price, item.etkenmadde, item.muadili, item.isFav])} />}
+                        />}
 
                 </View>
             </SafeAreaView>

@@ -22,7 +22,6 @@ export default function (state = initialState, action) {
             console.log(prescriptionCheck)
             if (!prescriptionCheck) {
                 showToast("İlaç reçetenize eklendi.");
-                console.log("r1");
                 var newPrescriptionList = [];
                 newPrescriptionList.id = action.payload.drug.id;
                 newPrescriptionList.title = action.payload.drug.title;
@@ -36,17 +35,10 @@ export default function (state = initialState, action) {
             }
             else {  
                 showToast("İlaç zaten reçetenizde ekli."); 
-               /*  Alert.alert("Eklenenemedi", "İlaç zaten reçetenizde ekli." , [
-                    {text: 'TAMAM', onPress: () => console.log('OK Pressed')},
-                  ] ); */
                 return state;
             }
             case 'REMOVE_PRESCRIPTION':
                 showToast("İlaç reçetenizden silindi.");
-            /* Alert.alert("Silindi", "İlaç reçetenizden silindi.", [
-                { text: 'TAMAM', onPress: () => console.log('OK Pressed') },
-            ]),  */
-                console.log("B1")
             return {
                 ...state, prescriptionList: [
                     ...state.prescriptionList.filter(drug => drug !== action.payload.drug),
@@ -60,12 +52,7 @@ export default function (state = initialState, action) {
             });
             console.log(favCheck)
             if (!favCheck) {
-                showToast("İlaç kaydedilenler listenize eklendi.");
-                /* Alert.alert("Eklendi", "İlaç kaydedilenler listenize eklendi." , [
-                    {text: 'TAMAM', onPress: () => console.log('OK Pressed')
-                    },
-                  ] ), */
-                console.log("A1");
+                showToast("İlaç kaydedildi.");
                 var newDrugsList = [];
                 newDrugsList.id = action.payload.drug.id;
                 newDrugsList.title = action.payload.drug.title;
@@ -78,19 +65,12 @@ export default function (state = initialState, action) {
                 return { ...state, favDrugsList: [...state.favDrugsList, newDrugsList.title] }
             }
             else {  
-                showToast("İlaç zaten kaydedilenler listenizde ekli.");
-               /*  Alert.alert("Eklenenemedi", "İlaç zaten kaydedilenler listenizde ekli." , [
-                    {text: 'TAMAM', onPress: () => console.log('OK Pressed')},
-                  ] ); */
+                showToast("İlaç zaten kayıtlı.");
                 return state;
             }
             
         case 'REMOVE_FAV':
-            showToast("İlaç kaydedilenler listenizden silindi.")
-           /*  Alert.alert("Silindi", "İlaç kaydedilenler listenizden silindi.", [
-                { text: 'TAMAM', onPress: () => console.log('OK Pressed') },
-            ]),  */
-                console.log("B1")
+            showToast("İlaç kayıt listenizden silindi.")
             return {
                 ...state, favDrugsList: [
                     ...state.favDrugsList.filter(drug => drug !== action.payload.drug),

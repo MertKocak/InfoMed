@@ -7,17 +7,15 @@ import FavDrugCard from '../../components/FavDrugCard';
 
 const FavoritesPage = ({ item, navigation }) => {
 
-  const list = useSelector(state => state.favDrugsList);
-  console.log(list);
+  const listDrug = useSelector(state => state.favDrugsList);
 
-  
     
   return (
       <SafeAreaView style={styles.body}>
       <View>
         <FlatList
           contentContainerStyle={{ paddingBottom: 12 }}
-          data={list}
+          data={listDrug}
           renderItem={({ item }) => <FavDrugCard data={item} /> }
         />
       </View>

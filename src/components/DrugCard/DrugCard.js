@@ -9,7 +9,7 @@ import Toast from 'react-native-toast-message';
 import { UseDispatch, useDispatch } from 'react-redux';
 import colors from '../../colors';
 
-const DrugCard = ({ data, onPress, favorite }) => {
+const DrugCard = ({ data, onPress }) => {
 
     const images = {
         parol: require("../../../assets/drug_images/parol.jpg"),

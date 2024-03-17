@@ -42,6 +42,7 @@ export default StyleSheet.create({
         fontSize: 14,
         fontFamily: "Raleway-Bold",
         textAlign: 'center',
+        marginBottom: 2,
     },
     modalText: {
         textAlignVertical: "center",
