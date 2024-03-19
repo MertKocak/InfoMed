@@ -18,43 +18,38 @@ export default StyleSheet.create({
         
     },
     flash: {
-        height: 60, 
+        height: 56, 
         width: windowWidth, 
         backgroundColor: colors.primaryColor, 
         justifyContent: "center",
         alignItems: "center",
     },
-    flashText: {
-        fontFamily: "Raleway-Bold",
-        fontSize: 14,
-        color: colors.secondaryColor
-    },
     titleStyle:{
         color: colors.primaryColor,
-        fontSize: 14,
-        fontFamily: "Raleway-Bold",
+        fontSize: 12,
+        fontFamily: "Manrope-Bold",
     },
     contentStyle: {
         color: colors.primaryColor,
-        fontSize: 14,
-        fontFamily: "Raleway-Medium",
+        fontSize: 12,
+        fontFamily: "Manrope-Regular",
     },
     dialogText: {
         color: colors.secondaryColor,
         fontSize: 12,
-        fontFamily: "Raleway-Bold",
+        fontFamily: "Manrope-Bold",
         marginBottom: 2
     },
     dialogButton: {
-        marginTop: 24,
+        marginTop: 8,
         backgroundColor: colors.primaryColor,
-        borderRadius: 24,
+        borderRadius: 6,
         height: 40,
-        width: windowWidth - 134
+        width: windowWidth - 136
     },
     flashIcon: {
         tintColor: colors.secondaryColor,
-        height: 24,
-        width: 24,
+        height: 22,
+        width: 22,
     }
 })

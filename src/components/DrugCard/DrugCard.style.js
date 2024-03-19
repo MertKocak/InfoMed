@@ -25,12 +25,12 @@ export default StyleSheet.create({
         color: colors.primaryColor,
         fontSize: 12,
         marginRight: 20,
-        fontFamily: 'Raleway-SemiBold',
+        fontFamily: 'Manrope-SemiBold',
     },
     price: {
         color: colors.primaryColor,
         fontSize: 12,
-        fontFamily: 'Raleway-Light',
+        fontFamily: 'Manrope-Light',
     },
     image: {
         height: 60,
@@ -50,8 +50,9 @@ export default StyleSheet.create({
     icon: {
         tintColor: colors.primaryColor,
         marginLeft: 8,
-        height: 24,
-        width: 24,
+        marginRight: 4,
+        height: 22,
+        width: 22,
         alignItems: 'center'
     }
 })

@@ -23,10 +23,11 @@ export default StyleSheet.create({
         
     },
     button: {
-        borderRadius: 50,
+        borderRadius: 10,
         margin: 16,
         marginTop: 6,
-        width: 120,
+        marginBottom: 12,
+        width: windowWidth-84,
         height: 40,
         justifyContent: "center"
     },
@@ -39,8 +40,8 @@ export default StyleSheet.create({
     },
     textStyle: {
         color: colors.secondaryColor,
-        fontSize: 14,
-        fontFamily: "Raleway-Bold",
+        fontSize: 12,
+        fontFamily: "Manrope-Bold",
         textAlign: 'center',
         marginBottom: 2,
     },
@@ -49,12 +50,21 @@ export default StyleSheet.create({
         padding: 14,
         fontSize: 12,
         color: colors.primaryColor,
-        fontFamily: "Raleway-Medium",
+        fontFamily: "Manrope-Regular",
+        textAlign: 'center',
+    },
+    modalText2: {
+        textAlignVertical: "center",
+        padding: 14,
+        paddingTop: 0,
+        fontSize: 12,
+        color: colors.primaryColor,
+        fontFamily: "Manrope-Bold",
         textAlign: 'center',
     },
     icon: {
-        height: 22,
-        width: 22,
+        height: 20,
+        width: 20,
         tintColor: colors.secondaryColor,
         alignSelf: "flex-end",
     }

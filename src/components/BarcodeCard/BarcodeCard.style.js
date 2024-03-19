@@ -22,12 +22,12 @@ export default StyleSheet.create({
     title: {
         color: colors.primaryColor,
         fontSize: 12,
-        fontFamily: 'Raleway-SemiBold',
+        fontFamily: 'Manrope-SemiBold',
     },
     price: {
         color: colors.primaryColor,
         fontSize: 11,
-        fontFamily: 'Raleway-Light',
+        fontFamily: 'Manrope-Light',
     },
     image: {
         height: 48,

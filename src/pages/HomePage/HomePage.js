@@ -14,6 +14,7 @@ import EquivalentPage from '../EquivalentPage/EquivalentPage';
 import colors from '../../colors';
 import {check, PERMISSIONS, RESULTS} from 'react-native-permissions';
 import { request } from 'react-native-permissions';
+import HomeCardC from '../../components/HomeCardC';
 
 
 const HomePage = ({ route, navigation }) => {
@@ -72,7 +73,7 @@ const HomePage = ({ route, navigation }) => {
                         <HomeCard title={"Muadil İlaç"} desc={"Girmiş olduğunuz ilaca eşdeğer ilaç önerisi alabilirsiniz"} imgPath={"5"} onPress={() => onPressButton("EquivalentPage")}></HomeCard>
                     </View>
                     <View>
-                    <HomeCard title={"Barkod Okut"} desc={"Prospektüs bilgilerine erişmek istediğiniz ilacın barkodunu okutabilirsiniz"} imgPath={"7"} onPress={() => onPressButton("BarcodeScannerPage")}></HomeCard>
+                    <HomeCardC title={"Barkod Okut"} desc={"Prospektüs bilgilerine erişmek istediğiniz ilacın barkodunu okutabilirsiniz"} imgPath={"7"} onPress={() => onPressButton("BarcodeScannerPage")}></HomeCardC>
 
                     </View>
                 </SafeAreaView>

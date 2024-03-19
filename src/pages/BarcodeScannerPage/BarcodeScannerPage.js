@@ -36,7 +36,7 @@ const BarcodeScannerPage = ({ item, navigation, route }) => {
     setListE(filteredList);
   }
 
-  const onPressDrug = ([id, title, description, image, price, etkenmadde, muadili, isFav]) => {
+  const onPressDrug = ([id, title, description, image, price, etkenmadde, muadili, barcode]) => {
     return (
       navigation.navigate('InfoPage', {
         id: id,
@@ -46,7 +46,7 @@ const BarcodeScannerPage = ({ item, navigation, route }) => {
         price: price,
         etkenmadde: etkenmadde,
         muadili: muadili,
-        isFav: isFav,
+        barcode: barcode,
       }
       ))
   };
@@ -103,9 +103,9 @@ const BarcodeScannerPage = ({ item, navigation, route }) => {
         isVisible={showDialog}
         onBackdropPress={() => setShowDialog(!showDialog)}>
             <Dialog.Title titleStyle={styles.titleStyle} title="Taratılan ilaç:"/>
-            {listE == "" ? <Text style = {styles.contentStyle}>İlaç bulunumadı.</Text> : <FlatList     
+            {listE == "" ? <Text style = {styles.contentStyle}>İlaç bulunumadı :/</Text> : <FlatList     
                         data={listE}
-                        renderItem={({ item }) => <BarcodeCard data={item} favorite={false} onPress={() => onPressDrug([item.id, item.title, item.description, item.image, item.price, item.etkenmadde, item.muadili, item.isFav])} />}
+                        renderItem={({ item }) => <BarcodeCard data={item} favorite={false} onPress={() => onPressDrug([item.id, item.title, item.description, item.image, item.price, item.etkenmadde, item.muadili, item.barcode])} />}
                     />}
             <Dialog.Actions>
                 <Dialog.Button titleStyle={styles.dialogText} buttonStyle = {styles.dialogButton} title="Yeniden Tara" onPress={() => {

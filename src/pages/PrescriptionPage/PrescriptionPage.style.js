@@ -21,7 +21,7 @@ export default StyleSheet.create({
     buttonText: {
         fontSize: 16,
         color: "white",
-        fontFamily: 'Raleway-Bold',
+        fontFamily: 'Urbanist-Bold',
     },
     content: {
         fontSize: 16,
@@ -29,7 +29,7 @@ export default StyleSheet.create({
         marginRight: 12,
         marginTop: 6,
         color: colors.primaryColor,
-        fontFamily: 'Raleway-Light',
+        fontFamily: 'Urbanist-Light',
     },
     contentW: {
         fontSize: 11,
@@ -38,7 +38,7 @@ export default StyleSheet.create({
         marginLeft: 2,
         marginRight: 34,
         color: colors.primaryColor,
-        fontFamily: 'Raleway-Regular',
+        fontFamily: 'Urbanist-Regular',
     },
     title: {
         color: colors.primaryColor, 
@@ -47,7 +47,7 @@ export default StyleSheet.create({
         marginBottom: 0, 
         fontSize: 16, 
         textAlign: "center",
-        fontFamily: 'Raleway-Bold'
+        fontFamily: 'Urbanist-Bold'
     },
     dateContainer: {
         justifyContent: "center",

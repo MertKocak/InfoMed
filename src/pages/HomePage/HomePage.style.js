@@ -10,9 +10,9 @@ export default StyleSheet.create({
         flex: 1
     },
     topContainer: {
-        height: windowHeight / 4,
-        borderBottomLeftRadius: 28,
-        borderBottomRightRadius: 28,
+        height: windowHeight / 4.2,
+        borderBottomLeftRadius: 24,
+        borderBottomRightRadius: 24,
         backgroundColor: colors.primaryColor,
         justifyContent: "center",
 
@@ -22,7 +22,7 @@ export default StyleSheet.create({
         width: windowWidth / 2,
         alignSelf: "center",
         objectFit: "contain",
-        marginBottom: 48,
+        marginBottom: 56,
 
     },
     container1: {

@@ -83,12 +83,6 @@ const DrugCard = ({ data, onPress }) => {
 
     const handleAddFav = () => {
         dispatch({ type: "ADD_FAV", payload: { drug: data } });
-        dispatch({ type: "ADD_FAV_ID", payload: { drug: data } });
-        dispatch({ type: "ADD_FAV_PRICE", payload: { drug: data } });
-        dispatch({ type: "ADD_FAV_DESC", payload: { drug: data } });
-        dispatch({ type: "ADD_FAV_IMG", payload: { drug: data } });
-        dispatch({ type: "ADD_FAV_EM", payload: { drug: data } });
-        dispatch({ type: "ADD_FAV_BARCODE", payload: { drug: data } });
 
     }
 
@@ -106,8 +100,8 @@ const DrugCard = ({ data, onPress }) => {
                         <Text style={styles.price}>Fiyat: {data.price} ₺</Text>
                     </SafeAreaView>
                     <SafeAreaView style={styles.fav_container}>
-                        <TouchableOpacity onPress={handleAddFav}>
-                            <Image style={styles.icon} source={require("../../../assets/icons/save.png")} /></TouchableOpacity>
+                        {/* <TouchableOpacity onPress={handleAddFav}>
+                            <Image style={styles.icon} source={require("../../../assets/icons/save.png")} /></TouchableOpacity> */}
                             <TouchableOpacity onPress={handleAddPrescription}>
                             <Image style={styles.icon} source={require("../../../assets/icons/addprescription.png")} /></TouchableOpacity>
                     </SafeAreaView>

@@ -12,9 +12,8 @@ const EMSearchPage = ({item, navigation}) => {
     const [list, setList] = useState(drug_data);
     const [listE, setListE] = useState([]);
 
-    const onPressDrug = ([id, title, description, image, price, etkenmadde, muadili]) => {
+    const onPressDrug = ([id, title, description, image, price, etkenmadde, barcode]) => {
       return(
-        console.log("girdi"),
         navigation.navigate('InfoPage', {
           id: id,
           title: title,
@@ -22,7 +21,7 @@ const EMSearchPage = ({item, navigation}) => {
           image: image, 
           price: price, 
           etkenmadde: etkenmadde, 
-          muadili: muadili,
+          barcode: barcode,
         }
       ))
     }
@@ -47,7 +46,7 @@ const EMSearchPage = ({item, navigation}) => {
           <SearchBar onSearch={handleSearch} />
         }
         data={listE}
-        renderItem ={({item}) =><DrugCard data = {item} onPress={() => onPressDrug([item.id, item.title, item.description, item.image, item.price, item.etkenmadde, item.muadili])}/>}
+        renderItem ={({item}) =><DrugCard data = {item} onPress={() => onPressDrug([item.id, item.title, item.description, item.image, item.price, item.etkenmadde, item.barcode])}/>}
         />
       </View>
     </SafeAreaView>

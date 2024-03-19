@@ -26,9 +26,13 @@ export default StyleSheet.create({
     },
     title: {
         color: colors.primaryColor,
-        fontSize: 14,
-        marginRight: 20,
-        fontFamily: 'Raleway-Medium',
+        
+        justifyContent: "center",
+        fontSize: 12,
+        height: 40,
+        marginRight: 10,
+        fontFamily: 'Manrope-SemiBold',
+        textAlignVertical: "center"
 
     },
     trash_container: {

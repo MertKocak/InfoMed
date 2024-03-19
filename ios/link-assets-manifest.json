@@ -2,36 +2,96 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "assets/fonts/Raleway-Bold.ttf",
-      "sha1": "df52b051d8cbe8f238a4192d1b81e6dca2a08f72"
+      "path": "assets/fonts/LibreBarcode128Text-Regular.ttf",
+      "sha1": "95880a73f528330a2e1492b5aa28989040865bb9"
     },
     {
-      "path": "assets/fonts/Raleway-ExtraBold.ttf",
-      "sha1": "507ed8ef6f99e561f51f3cde5cc16e09270308d6"
+      "path": "assets/fonts/Manrope-Bold.ttf",
+      "sha1": "a6b63c832d12337efb3123f47863f54472c81bf5"
     },
     {
-      "path": "assets/fonts/Raleway-ExtraLight.ttf",
-      "sha1": "cc62191554e92d8bd44eedc0f1e9b7979544548d"
+      "path": "assets/fonts/Manrope-ExtraBold.ttf",
+      "sha1": "01e9f1ed4df60771240fd42f5ac9dcaf398f110b"
     },
     {
-      "path": "assets/fonts/Raleway-Light.ttf",
-      "sha1": "8d2b201f053f6011b2f02111fb44b76a8146824a"
+      "path": "assets/fonts/Manrope-ExtraLight.ttf",
+      "sha1": "03f11f0309f7f955fe90e3fdf22fee5e60bada4e"
     },
     {
-      "path": "assets/fonts/Raleway-Medium.ttf",
-      "sha1": "18128ef6b5306a11f256a4f16c2fa63ab8b608d9"
+      "path": "assets/fonts/Manrope-Light.ttf",
+      "sha1": "67a7446c44660168ed179812753b03390858aa92"
     },
     {
-      "path": "assets/fonts/Raleway-Regular.ttf",
-      "sha1": "5a37f51d6a22ae86cc64c9085b5f64b180ad2609"
+      "path": "assets/fonts/Manrope-Medium.ttf",
+      "sha1": "d62e1b2498f65ea5bc20fc5e365d19239527b419"
     },
     {
-      "path": "assets/fonts/Raleway-SemiBold.ttf",
-      "sha1": "a98dee96e1e93fbf4ff1c50f6e8834e49f17f72f"
+      "path": "assets/fonts/Manrope-Regular.ttf",
+      "sha1": "036b14064c7b90b4b200f2730981effea5e58b15"
     },
     {
-      "path": "assets/fonts/Raleway-Thin.ttf",
-      "sha1": "1a064acca2f0e327e8dfc2325c165f6e6ca7792c"
+      "path": "assets/fonts/Manrope-SemiBold.ttf",
+      "sha1": "e423e112f4832916b05308934c10aa84fd14c607"
+    },
+    {
+      "path": "assets/fonts/Poppins-Bold.ttf",
+      "sha1": "875cf0cecd647bcf22e79d633d868c1b1ec98dfa"
+    },
+    {
+      "path": "assets/fonts/Poppins-ExtraBold.ttf",
+      "sha1": "4b5c0750f073abd576413a0898d3b95adaf199c8"
+    },
+    {
+      "path": "assets/fonts/Poppins-Light.ttf",
+      "sha1": "e247a92158e112f8bf7b638c8d95381d66b00dbb"
+    },
+    {
+      "path": "assets/fonts/Poppins-Medium.ttf",
+      "sha1": "283f21b44efbdbf276ba802be2d949a36bbc4233"
+    },
+    {
+      "path": "assets/fonts/Poppins-Regular.ttf",
+      "sha1": "fdd3002e7d814ee47c1c1b8487c72c6bbb3a2d00"
+    },
+    {
+      "path": "assets/fonts/Poppins-SemiBold.ttf",
+      "sha1": "8a4ace9392d06bcb7f8ea2f5169b07e4c383a90d"
+    },
+    {
+      "path": "assets/fonts/Poppins-Thin.ttf",
+      "sha1": "09ba4dcd5509c8085bf88c665dcc51cbdfced27b"
+    },
+    {
+      "path": "assets/fonts/Urbanist-Bold.ttf",
+      "sha1": "5393e451665e344701f6f250898895ca98dabdbc"
+    },
+    {
+      "path": "assets/fonts/Urbanist-ExtraBold.ttf",
+      "sha1": "8456433f5c419161b01f72c0db6d431132b5f74a"
+    },
+    {
+      "path": "assets/fonts/Urbanist-ExtraLight.ttf",
+      "sha1": "2f64ebe6c0466770c52d2c59a558c7a5df040061"
+    },
+    {
+      "path": "assets/fonts/Urbanist-Light.ttf",
+      "sha1": "9477d6f6236a773d649a5e58a2ab612411f8e1ee"
+    },
+    {
+      "path": "assets/fonts/Urbanist-Medium.ttf",
+      "sha1": "8fdacadcc8bf9a54e98e7894f54c0d8edab92b03"
+    },
+    {
+      "path": "assets/fonts/Urbanist-Regular.ttf",
+      "sha1": "ca6e793bc43b42306c06fedc353c68af20ee2c7b"
+    },
+    {
+      "path": "assets/fonts/Urbanist-SemiBold.ttf",
+      "sha1": "a0dd44015ece2092d0b480cd60c87ccbe932e3f4"
+    },
+    {
+      "path": "assets/fonts/Urbanist-Thin.ttf",
+      "sha1": "a5741733c8bb3dae3513ff8d7ecb04a472725974"
     }
   ]
 }

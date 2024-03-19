@@ -33,7 +33,7 @@ const IndicationPage = ({ navigation }) => {
         console.log("isOK: " + isOk)
     }
 
-    const onPressDrug = ([id, title, description, image, price, etkenmadde, muadili, isFav]) => {
+    const onPressDrug = ([id, title, description, image, price, etkenmadde, muadili, barcode]) => {
         return (
             navigation.navigate('InfoPage', {
                 id: id,
@@ -43,14 +43,14 @@ const IndicationPage = ({ navigation }) => {
                 price: price,
                 etkenmadde: etkenmadde,
                 muadili: muadili,
-                isFav: isFav,
+                barcode: barcode,
             }
             ))
     };
 
     return (
-        <ScrollView>
-            <SafeAreaView style={styles.body}>
+        <ScrollView  style={styles.body}>
+            <SafeAreaView>
                 <View style={styles.body}>
                     <View style={styles.searchBody}>
                         <Image style={styles.searchIcon} source={require("../../../assets/icons/search.png")} />
@@ -70,14 +70,14 @@ const IndicationPage = ({ navigation }) => {
                         Önerilen İlaç/İlaçlar:
                     </Text>
                     {isOk ? <View style={{ flexDirection: "column", justifyContent: 'center', alignItems: 'center' }}>
-                        <Image style={{ tintColor: colors.primaryColor, marginTop: 40, height: 28, width: 28 }} source={require("../../../assets/icons/foundError.png")} />
-                        <Text style={{ fontFamily: "Raleway-Medium", alignSelf: 'center', textAlign: 'center', borderRadius: 12, marginLeft: 16, marginRight: 16, marginTop: 12, fontSize: 12, color: colors.primaryColor }} >Aradığınız semptoma uygun ilaç bulunamadı</Text>
-                        <Text style={{ fontFamily: "Raleway-Medium", alignSelf: 'center', textAlign: 'center', borderRadius: 12, marginLeft: 16, marginRight: 16, marginTop: 4, fontSize: 12, color: colors.primaryColor }} >Lütfen semptom ismini doğru yazdığınızdan emin olunuz veya semptomu başka şekilde ifade etmeyi deneyiniz</Text>
+                        <Image style={{ tintColor: colors.primaryColor, marginTop: 36, height: 22, width: 22 }} source={require("../../../assets/icons/foundError.png")} />
+                        <Text style={{ fontFamily: "Manrope-SemiBold", alignSelf: 'center', textAlign: 'center', borderRadius: 12, marginLeft: 48, marginRight: 48, marginTop: 12, fontSize: 11, color: colors.primaryColor }} >Aradığınız semptoma uygun ilaç bulunamadı!</Text>
+                        <Text style={{ fontFamily: "Manrope-Light", alignSelf: 'center', textAlign: 'center', borderRadius: 12, marginLeft: 48, marginRight: 48, marginTop: 4, fontSize: 11, color: colors.primaryColor }} >Lütfen semptom ismini doğru yazdığınızdan emin olunuz veya semptomu başka şekilde ifade etmeyi deneyiniz.</Text>
                     </View>
                         : <FlatList
                             contentContainerStyle={{ paddingBottom: 12, marginTop: -6 }}
                             data={listE}
-                            renderItem={({ item }) => <DrugCard data={item} favorite={false} onPress={() => onPressDrug([item.id, item.title, item.description, item.image, item.price, item.etkenmadde, item.muadili, item.isFav])} />}
+                            renderItem={({ item }) => <DrugCard data={item} favorite={false} onPress={() => onPressDrug([item.id, item.title, item.description, item.image, item.price, item.etkenmadde, item.muadili, item.barcode])} />}
                         />}
 
                 </View>

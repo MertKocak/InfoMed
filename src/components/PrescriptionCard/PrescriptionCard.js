@@ -79,12 +79,12 @@ const PrescriptionCard = ({ data, onPress }) => {
                 </Modal>
                 <SafeAreaView style={styles.trash_container}>
                         <TouchableOpacity onPress={openDatepicker}>
-                            <Image style={{ height: 24, width: 24, alignItems: 'center', tintColor: colors.primaryColor }} source={require("../../../assets/icons/reminder.png")} />
+                            <Image style={{ height: 22, width: 22, alignItems: 'center', tintColor: colors.primaryColor }} source={require("../../../assets/icons/reminder.png")} />
                         </TouchableOpacity>
                     </SafeAreaView> 
                     <SafeAreaView style={styles.trash_container}>
                         <TouchableOpacity onPress={() => handleRemovePres(data)}>
-                            <Image style={{ height: 26, width: 26, alignItems: 'center', tintColor: colors.primaryColor }} source={require("../../../assets/icons/trash.png")} />
+                            <Image style={{ height: 24, width: 24, alignItems: 'center', tintColor: colors.primaryColor }} source={require("../../../assets/icons/trash.png")} />
                         </TouchableOpacity>
                     </SafeAreaView> 
                 </View>

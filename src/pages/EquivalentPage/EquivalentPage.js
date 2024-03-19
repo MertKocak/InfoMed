@@ -33,7 +33,7 @@ const EquivalentPage = ({ navigation }) => {
         console.log("isOK: " + isOk)
     }
 
-    const onPressDrug = ([id, title, description, image, price, etkenmadde, muadili, isFav]) => {
+    const onPressDrug = ([id, title, description, image, price, etkenmadde, muadili, barcode]) => {
         return (
             navigation.navigate('InfoPage', {
                 id: id,
@@ -43,7 +43,7 @@ const EquivalentPage = ({ navigation }) => {
                 price: price,
                 etkenmadde: etkenmadde,
                 muadili: muadili,
-                isFav: isFav,
+                barcode: barcode,
             }
             ))
     };
@@ -71,13 +71,13 @@ const EquivalentPage = ({ navigation }) => {
                     </Text>
                     {isOk ? <View style={{ flexDirection: "column", justifyContent: 'center', alignItems: 'center' }}>
                         <Image style={{ tintColor: colors.primaryColor, marginTop: 40, height: 28, width: 28 }} source={require("../../../assets/icons/foundError.png")} />
-                        <Text style={{ fontFamily: "Raleway-Medium", alignSelf: 'center', textAlign: 'center', borderRadius: 12, marginLeft: 12, marginRight: 12, marginTop: 12, fontSize: 12, color: colors.primaryColor }} >Aradığınız ilaç için uygun muadil ilaç bulunamadı.</Text>
-                        <Text style={{ fontFamily: "Raleway-Medium", alignSelf: 'center', textAlign: 'center', borderRadius: 12, marginLeft: 12, marginRight: 12, marginTop: 0, fontSize: 12, color: colors.primaryColor }} >Lütfen ilaç ismini doğru yazdığınızdan emin olunuz.</Text>
+                        <Text style={{ fontFamily: "Manrope-Medium", alignSelf: 'center', textAlign: 'center', borderRadius: 12, marginLeft: 12, marginRight: 12, marginTop: 12, fontSize: 12, color: colors.primaryColor }} >Aradığınız ilaç için uygun muadil ilaç bulunamadı.</Text>
+                        <Text style={{ fontFamily: "Manrope-Medium", alignSelf: 'center', textAlign: 'center', borderRadius: 12, marginLeft: 12, marginRight: 12, marginTop: 0, fontSize: 12, color: colors.primaryColor }} >Lütfen ilaç ismini doğru yazdığınızdan emin olunuz.</Text>
                     </View>
                         : <FlatList
                             contentContainerStyle={{ paddingBottom: 12 }}
                             data={listE}
-                            renderItem={({ item }) => <DrugCard data={item} favorite={false} onPress={() => onPressDrug([item.id, item.title, item.description, item.image, item.price, item.etkenmadde, item.muadili, item.isFav])} />}
+                            renderItem={({ item }) => <DrugCard data={item} favorite={false} onPress={() => onPressDrug([item.id, item.title, item.description, item.image, item.price, item.etkenmadde, item.muadili, item.barcode])} />}
                         />}
 
                 </View>

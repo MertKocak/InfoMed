@@ -12,7 +12,7 @@ export default StyleSheet.create({
         marginTop: 12,
         paddingRight: 8,
         width: (windowWidth - 24),
-        height: 68,
+        height: 60,
         borderRadius: 12,
         flexDirection: "row",
         justifyContent: "center",
@@ -25,23 +25,24 @@ export default StyleSheet.create({
         color: colors.primaryColor,
         paddingLeft: 16,
         justifyContent: "center",
-        fontSize: 14,
+        fontSize: 12,
         height: 40,
-        marginRight: 20,
-        fontFamily: 'Raleway-Medium',
+        marginRight: 10,
+        fontFamily: 'Manrope-SemiBold',
         textAlignVertical: "center"
     },
     trash_container: {
         justifyContent: "center",
-        marginRight: 4,
+        marginRight: 0,
+        marginLeft: 2,
 
     },
     datePicker: {
-        height: 160,
+        height: 120,
         width: windowWidth - 180,
         alignSelf: "center",
         marginTop: 12,
-        marginBottom: 12,
+        marginBottom: 6,
     },
     dateContainer: {
         justifyContent: "center",
@@ -64,36 +65,9 @@ export default StyleSheet.create({
         marginTop: 8,
         marginBottom: 0,
     },
-    buttonText: {
-        fontSize: 14,
-        color: "white",
-        marginBottom: 2,
-        fontFamily: 'Raleway-Bold',
-    },
-    notif: {
-        fontSize: 14,
-        marginBottom: 4,
-        color: colors.primaryColor,
-        fontFamily: "Raleway-Medium",
-    },
-    notifB: {
-        fontSize: 14,
-        marginBottom: 4,
-        color: colors.primaryColor,
-        fontFamily: "Raleway-Medium",
-    },
-    dateText: {
-        flexDirection: "row",
-        paddingLeft: 12,
-        marginBottom: 12,
-        height: 24,
-        alignItems: "center",
-        
-
-    },
     edit_container: {
         justifyContent: "center",
-        marginRight: 6,
+        marginRight: 4,
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "center",
@@ -110,13 +84,13 @@ export default StyleSheet.create({
         backgroundColor: colors.primaryColor,
         borderRadius: 12,
         width: windowWidth - 24,
-        
         alignItems: 'center',
         justifyContent: "space-between",
     },
     buttonPopup: {
-        borderRadius: 8,
+        borderRadius: 10,
         margin: 12,
+        marginBottom: 14,
         width: windowWidth - 48,
         height: 40,
         backgroundColor: colors.secondaryColor,
@@ -131,15 +105,9 @@ export default StyleSheet.create({
     },
     textStyle: {
         color: colors.primaryColor,
-        fontSize: 14,
+        fontSize: 12,
         marginBottom: 2,
-        fontFamily: "Raleway-Bold",
+        fontFamily: "Manrope-ExtraBold",
         textAlign: 'center',
     },
-    icon: {
-        height: 22,
-        width: 22,
-        tintColor: colors.secondaryColor,
-        alignSelf: "flex-end",
-    }
 })

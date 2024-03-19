@@ -100,8 +100,8 @@ const InfoPage = ({ route, navigation }) => {
                             <Text style={styles.price}>Fiyat: {price} ₺</Text>
 
                             <View style={{ flexDirection: 'row' }}>
-                                <Text style={styles.subtitle2}>Barkod: </Text>
-                                <Text style={styles.contents2}>{barcode}</Text>
+                                <Text style={styles.barcode}>Barkod: </Text>
+                                <Text style={styles.barcodeText}>{barcode}</Text>
                             </View>
                         </View>
                     </View>
@@ -127,13 +127,13 @@ const InfoPage = ({ route, navigation }) => {
                             marginTop: 8,
                             color: colors.primaryColor,
                             fontSize: 14,
-                            fontFamily: 'Raleway-SemiBold',
+                            fontFamily: 'Manrope-SemiBold',
                         }}>Etken Madde: </Text>
                         <Text style={{
                             marginTop: 8,
                             color: "#191919",
                             fontSize: 14,
-                            fontFamily: 'Raleway-Regular',
+                            fontFamily: 'Manrope-Regular',
                         }}>{etkenmadde}</Text>
                     </View>
                     <Text style={styles.subtitle}>Kullanım Talimatları:</Text>

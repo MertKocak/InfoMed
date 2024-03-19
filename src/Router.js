@@ -40,8 +40,8 @@ const Router = ({ route, navigation }) => {
                 title: "",
                 headerStyle: { backgroundColor: colors.primaryColor },
                 headerTitleStyle: {
-                  fontFamily: 'Raleway-SemiBold',
-                  fontSize: 15
+                  fontFamily: 'Manrope-SemiBold',
+                  fontSize: 14
                 },
                 headerShadowVisible: false,
                 headerTitleAlign: 'center',
@@ -62,12 +62,13 @@ const Router = ({ route, navigation }) => {
                       }}>
                       <View style={styles.centeredView}>
                         <View style={styles.modalView}>
-                          <Text style={styles.modalText}>Bu uygulama, kullanıcıların ilaçlar hakkında bilgi edinmelerine ve belirli durumlar için ilaç önerisi almalarına yardımcı olmak amacıyla tasarlanmıştır.{"\n"}Bu bilgiler sadece genel bilgilendirme amaçlıdır. Bir doktordan veya eczacıdan alınacak profesyonel tavsiyenin yerini tutamaz.{"\n"}{"\n"}Herhangi bir sağlık sorunu, belirti veya ilaç kullanımı ile ilgili endişeleriniz varsa, lütfen bir doktora veya eczacıya danışın. </Text>
-                          <Pressable
+                          <Text style={styles.modalText}>Bu uygulama, kullanıcıların ilaçlar hakkında bilgi edinmelerine ve belirli durumlar için ilaç önerisi almalarına yardımcı olmak amacıyla tasarlanmıştır. Bu bilgiler sadece genel bilgilendirme amaçlıdır. Bir doktordan veya eczacıdan alınacak profesyonel tavsiyenin yerini tutamaz.</Text>
+                          <Text style={styles.modalText2}>Herhangi bir sağlık sorunu, belirti veya ilaç kullanımı ile ilgili endişeleriniz varsa, lütfen bir doktora veya eczacıya danışın. </Text>
+                          <TouchableOpacity
                             style={[styles.button, styles.buttonClose]}
                             onPress={() => setModalVisible(!modalVisible)}>
                             <Text style={styles.textStyle}>Tamam</Text>
-                          </Pressable>
+                          </TouchableOpacity>
                         </View>
                       </View>
                     </Modal>
@@ -78,8 +79,8 @@ const Router = ({ route, navigation }) => {
               options={({ navigation }) => ({
                 title: "İlaç Ara",
                 headerTitleStyle: {
-                  fontFamily: 'Raleway-SemiBold',
-                  fontSize: 15
+                  fontFamily: 'Manrope-SemiBold',
+                  fontSize: 14
                 },
                 headerStyle: { backgroundColor: colors.primaryColor },
                 headerShadowVisible: false,
@@ -96,8 +97,8 @@ const Router = ({ route, navigation }) => {
               options={({ navigation }) => ({
                 title: "Barkod Okut",
                 headerTitleStyle: {
-                  fontFamily: 'Raleway-SemiBold',
-                  fontSize: 15
+                  fontFamily: 'Manrope-SemiBold',
+                  fontSize: 14
                 },
                 headerStyle: { backgroundColor: colors.primaryColor },
                 headerShadowVisible: false,
@@ -111,8 +112,8 @@ const Router = ({ route, navigation }) => {
               options={({ navigation }) => ({
                 title: "Etken Madde Ara",
                 headerTitleStyle: {
-                  fontFamily: 'Raleway-SemiBold',
-                  fontSize: 15
+                  fontFamily: 'Manrope-SemiBold',
+                  fontSize: 14
                 },
                 headerStyle: { backgroundColor: colors.primaryColor },
                 headerShadowVisible: false,
@@ -129,8 +130,8 @@ const Router = ({ route, navigation }) => {
               options={({ navigation }) => ({
                 title: "Kaydedilenler",
                 headerTitleStyle: {
-                  fontFamily: 'Raleway-SemiBold',
-                  fontSize: 15
+                  fontFamily: 'Manrope-SemiBold',
+                  fontSize: 14
                 },
                 headerStyle: { backgroundColor: colors.primaryColor },
                 headerShadowVisible: false,
@@ -147,8 +148,8 @@ const Router = ({ route, navigation }) => {
               options={({ navigation }) => ({
                 title: "Reçetem",
                 headerTitleStyle: {
-                  fontFamily: 'Raleway-SemiBold',
-                  fontSize: 15
+                  fontFamily: 'Manrope-SemiBold',
+                  fontSize: 14
                 },
                 headerStyle: { backgroundColor: colors.primaryColor },
                 headerShadowVisible: false,
@@ -165,8 +166,8 @@ const Router = ({ route, navigation }) => {
               options={({ navigation }) => ({
                 title: "Semptom",
                 headerTitleStyle: {
-                  fontFamily: 'Raleway-SemiBold',
-                  fontSize: 15
+                  fontFamily: 'Manrope-SemiBold',
+                  fontSize: 14
                 },
                 headerStyle: { backgroundColor: colors.primaryColor },
                 headerShadowVisible: false,
@@ -183,8 +184,8 @@ const Router = ({ route, navigation }) => {
               options={({ navigation }) => ({
                 title: "Muadil İlaç",
                 headerTitleStyle: {
-                  fontFamily: 'Raleway-SemiBold',
-                  fontSize: 15
+                  fontFamily: 'Manrope-SemiBold',
+                  fontSize: 14
                 },
                 headerStyle: { backgroundColor: colors.primaryColor },
                 headerShadowVisible: false,
@@ -201,8 +202,8 @@ const Router = ({ route, navigation }) => {
               options={({ navigation }) => ({
                 title: "Prospektüs",
                 headerTitleStyle: {
-                  fontFamily: 'Raleway-SemiBold',
-                  fontSize: 15
+                  fontFamily: 'Manrope-SemiBold',
+                  fontSize: 14
                 },
                 headerStyle: { backgroundColor: colors.primaryColor },
                 headerShadowVisible: false,

@@ -7,15 +7,15 @@ const windowHeight = Dimensions.get('window').height;
 export default StyleSheet.create({
   input: {
     backgroundColor: colors.secondaryColor,
-    height: 40,
+    height: 38,
     width: windowWidth - 100,
     borderRadius: 38,
-    fontSize: 14,
+    fontSize: 12,
     alignContent: "center",
     color: colors.primaryColor,
-    fontFamily: 'Raleway-Regular',
-    marginLeft: 6,
-
+    fontFamily: 'Manrope-Regular',
+    marginLeft: 4,
+    marginTop: 2,
   },
   searchBody: {
     backgroundColor: colors.secondaryColor,
@@ -23,15 +23,15 @@ export default StyleSheet.create({
     margin: 12,
     borderRadius: 36,
     height: 42,
-    borderWidth: 0.75,
+    borderWidth: 0.5,
     borderColor: colors.primaryColor,
     marginBottom: 0,
     alignItems: 'center',
   },
   searchIcon: {
-    height: 32,
-    width: 32,
-    marginLeft: 6,
+    height: 28,
+    width: 28,
+    marginLeft: 8,
     tintColor: colors.primaryColor
   }
 }

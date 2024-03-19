@@ -14,14 +14,29 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-InfoMed-InfoMedTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-InfoMed-InfoMedTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		F6AC68CC35134C3F87839AD0 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 167DC048D79B4A65940C3C1F /* Raleway-Bold.ttf */; };
-		5C1773E86B904AB5A426783A /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6249FBF3B74449BC9ED81E58 /* Raleway-ExtraBold.ttf */; };
-		3703E42FDF15409FB796793E /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11E68230EEE4416A8D394B23 /* Raleway-ExtraLight.ttf */; };
-		A2AF2EDFB7B34E9FB27524EA /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30551FB93F0F43A9AB743AE9 /* Raleway-Light.ttf */; };
-		940F4210D07A4B329721F3A9 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B926C0005BEC444BBB63B0DE /* Raleway-Medium.ttf */; };
-		7D8B0D6D0D184F3392ACAB5A /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2CD08D44EA544B480ACDA14 /* Raleway-Regular.ttf */; };
-		9266932FE44E48798495DBC7 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDD4186CA57D4D37B99E2CB8 /* Raleway-SemiBold.ttf */; };
-		A54CD1EC4ECD485283DCE51E /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D5273C8C91348FE8088CCD7 /* Raleway-Thin.ttf */; };
+		2B70BD13018D43F295DDF4A7 /* Urbanist-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E5E342230AB484D9AA3C0DC /* Urbanist-Bold.ttf */; };
+		F1A9D66232564FB386E1CAB8 /* Urbanist-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10EC4E6DAC5B44918C44F968 /* Urbanist-ExtraBold.ttf */; };
+		1F5060026B9641CD9FDD671B /* Urbanist-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5100A76ABAA14F2785313C2C /* Urbanist-ExtraLight.ttf */; };
+		502FCDEE35114EE181694E31 /* Urbanist-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A58BCE784547454C9D5F29F3 /* Urbanist-Light.ttf */; };
+		F792DB4F7207405FA31F6BC3 /* Urbanist-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5459FF7E769F42A4ADAABDA1 /* Urbanist-Medium.ttf */; };
+		C5144FC7AC924344B091F44F /* Urbanist-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01377FC5B38C4E14BABFCE0B /* Urbanist-Regular.ttf */; };
+		A26F2A53F781427BB2ADF66F /* Urbanist-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C1E5C805E184553897E60A3 /* Urbanist-SemiBold.ttf */; };
+		AD757EBF78ED4A87BB85BC88 /* Urbanist-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96D78AB5372F4D3DBDEA3B2D /* Urbanist-Thin.ttf */; };
+		BC9169A5B2064942BE66D45B /* LibreBarcode128Text-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48121E25CB8E454591F0F97D /* LibreBarcode128Text-Regular.ttf */; };
+		DD4EFDD317E74906BD3496D8 /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 236E573C9BF947D68728DA8C /* Manrope-Bold.ttf */; };
+		54078D8CD4CA4DB4A53D2E6A /* Manrope-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C65DED9ED4B6421C9405F4DB /* Manrope-ExtraBold.ttf */; };
+		5EA6A4B5BEC54486AEB49CA6 /* Manrope-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2998503DA0914F7ABB8F0B5A /* Manrope-ExtraLight.ttf */; };
+		C1FB0C339BB44FD9A78B0F3F /* Manrope-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCE937FBFE0A4F9B8A650211 /* Manrope-Light.ttf */; };
+		70BD0E683F144F08A44F655A /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39D1C4396B0A4BC3A906FE18 /* Manrope-Medium.ttf */; };
+		AF28B99CA74C4F18B4131AE4 /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504890E23EEA4B4AB7C888D4 /* Manrope-Regular.ttf */; };
+		D118ED7FBDF24127AB9A39B9 /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39E492D5D7464B49A0FE12DC /* Manrope-SemiBold.ttf */; };
+		12750B1A0526467A95F4A9FA /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71190D514F614487818FE63C /* Poppins-Bold.ttf */; };
+		987B146B33F445FBBF5D7E99 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5946D4B3D29B40BE97AF5281 /* Poppins-ExtraBold.ttf */; };
+		D5079ADD472A4D43B722DF1E /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFBF89AC50CD458A95618724 /* Poppins-Light.ttf */; };
+		405CD6EC7B354F658C7C530A /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E7A624F48084650A02F761D /* Poppins-Medium.ttf */; };
+		34AF33E2189841B99FEA4831 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 611562B68D8E47A1A084956C /* Poppins-Regular.ttf */; };
+		1DB7B2E3FF204F89B8577254 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C96E49E985C64055849206BC /* Poppins-SemiBold.ttf */; };
+		44517062114C4447A20C89E4 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59D525DA3677457F9E9068C1 /* Poppins-Thin.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,14 +67,29 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = InfoMed/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-InfoMed-InfoMedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfoMed-InfoMedTests.release.xcconfig"; path = "Target Support Files/Pods-InfoMed-InfoMedTests/Pods-InfoMed-InfoMedTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		167DC048D79B4A65940C3C1F /* Raleway-Bold.ttf */ = {isa = PBXFileReference; name = "Raleway-Bold.ttf"; path = "../assets/fonts/Raleway-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6249FBF3B74449BC9ED81E58 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Raleway-ExtraBold.ttf"; path = "../assets/fonts/Raleway-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		11E68230EEE4416A8D394B23 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Raleway-ExtraLight.ttf"; path = "../assets/fonts/Raleway-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		30551FB93F0F43A9AB743AE9 /* Raleway-Light.ttf */ = {isa = PBXFileReference; name = "Raleway-Light.ttf"; path = "../assets/fonts/Raleway-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B926C0005BEC444BBB63B0DE /* Raleway-Medium.ttf */ = {isa = PBXFileReference; name = "Raleway-Medium.ttf"; path = "../assets/fonts/Raleway-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E2CD08D44EA544B480ACDA14 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; name = "Raleway-Regular.ttf"; path = "../assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		EDD4186CA57D4D37B99E2CB8 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; name = "Raleway-SemiBold.ttf"; path = "../assets/fonts/Raleway-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7D5273C8C91348FE8088CCD7 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; name = "Raleway-Thin.ttf"; path = "../assets/fonts/Raleway-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1E5E342230AB484D9AA3C0DC /* Urbanist-Bold.ttf */ = {isa = PBXFileReference; name = "Urbanist-Bold.ttf"; path = "../assets/fonts/Urbanist-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		10EC4E6DAC5B44918C44F968 /* Urbanist-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Urbanist-ExtraBold.ttf"; path = "../assets/fonts/Urbanist-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5100A76ABAA14F2785313C2C /* Urbanist-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Urbanist-ExtraLight.ttf"; path = "../assets/fonts/Urbanist-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A58BCE784547454C9D5F29F3 /* Urbanist-Light.ttf */ = {isa = PBXFileReference; name = "Urbanist-Light.ttf"; path = "../assets/fonts/Urbanist-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5459FF7E769F42A4ADAABDA1 /* Urbanist-Medium.ttf */ = {isa = PBXFileReference; name = "Urbanist-Medium.ttf"; path = "../assets/fonts/Urbanist-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		01377FC5B38C4E14BABFCE0B /* Urbanist-Regular.ttf */ = {isa = PBXFileReference; name = "Urbanist-Regular.ttf"; path = "../assets/fonts/Urbanist-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2C1E5C805E184553897E60A3 /* Urbanist-SemiBold.ttf */ = {isa = PBXFileReference; name = "Urbanist-SemiBold.ttf"; path = "../assets/fonts/Urbanist-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		96D78AB5372F4D3DBDEA3B2D /* Urbanist-Thin.ttf */ = {isa = PBXFileReference; name = "Urbanist-Thin.ttf"; path = "../assets/fonts/Urbanist-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		48121E25CB8E454591F0F97D /* LibreBarcode128Text-Regular.ttf */ = {isa = PBXFileReference; name = "LibreBarcode128Text-Regular.ttf"; path = "../assets/fonts/LibreBarcode128Text-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		236E573C9BF947D68728DA8C /* Manrope-Bold.ttf */ = {isa = PBXFileReference; name = "Manrope-Bold.ttf"; path = "../assets/fonts/Manrope-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C65DED9ED4B6421C9405F4DB /* Manrope-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Manrope-ExtraBold.ttf"; path = "../assets/fonts/Manrope-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2998503DA0914F7ABB8F0B5A /* Manrope-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Manrope-ExtraLight.ttf"; path = "../assets/fonts/Manrope-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DCE937FBFE0A4F9B8A650211 /* Manrope-Light.ttf */ = {isa = PBXFileReference; name = "Manrope-Light.ttf"; path = "../assets/fonts/Manrope-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		39D1C4396B0A4BC3A906FE18 /* Manrope-Medium.ttf */ = {isa = PBXFileReference; name = "Manrope-Medium.ttf"; path = "../assets/fonts/Manrope-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		504890E23EEA4B4AB7C888D4 /* Manrope-Regular.ttf */ = {isa = PBXFileReference; name = "Manrope-Regular.ttf"; path = "../assets/fonts/Manrope-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		39E492D5D7464B49A0FE12DC /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; name = "Manrope-SemiBold.ttf"; path = "../assets/fonts/Manrope-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		71190D514F614487818FE63C /* Poppins-Bold.ttf */ = {isa = PBXFileReference; name = "Poppins-Bold.ttf"; path = "../assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5946D4B3D29B40BE97AF5281 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Poppins-ExtraBold.ttf"; path = "../assets/fonts/Poppins-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BFBF89AC50CD458A95618724 /* Poppins-Light.ttf */ = {isa = PBXFileReference; name = "Poppins-Light.ttf"; path = "../assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5E7A624F48084650A02F761D /* Poppins-Medium.ttf */ = {isa = PBXFileReference; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		611562B68D8E47A1A084956C /* Poppins-Regular.ttf */ = {isa = PBXFileReference; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C96E49E985C64055849206BC /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		59D525DA3677457F9E9068C1 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; name = "Poppins-Thin.ttf"; path = "../assets/fonts/Poppins-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,14 +198,29 @@
 		00578D5992F940E79381D4F8 /* Resources */ = {
 			isa = "PBXGroup";
 			children = (
-				167DC048D79B4A65940C3C1F /* Raleway-Bold.ttf */,
-				6249FBF3B74449BC9ED81E58 /* Raleway-ExtraBold.ttf */,
-				11E68230EEE4416A8D394B23 /* Raleway-ExtraLight.ttf */,
-				30551FB93F0F43A9AB743AE9 /* Raleway-Light.ttf */,
-				B926C0005BEC444BBB63B0DE /* Raleway-Medium.ttf */,
-				E2CD08D44EA544B480ACDA14 /* Raleway-Regular.ttf */,
-				EDD4186CA57D4D37B99E2CB8 /* Raleway-SemiBold.ttf */,
-				7D5273C8C91348FE8088CCD7 /* Raleway-Thin.ttf */,
+				1E5E342230AB484D9AA3C0DC /* Urbanist-Bold.ttf */,
+				10EC4E6DAC5B44918C44F968 /* Urbanist-ExtraBold.ttf */,
+				5100A76ABAA14F2785313C2C /* Urbanist-ExtraLight.ttf */,
+				A58BCE784547454C9D5F29F3 /* Urbanist-Light.ttf */,
+				5459FF7E769F42A4ADAABDA1 /* Urbanist-Medium.ttf */,
+				01377FC5B38C4E14BABFCE0B /* Urbanist-Regular.ttf */,
+				2C1E5C805E184553897E60A3 /* Urbanist-SemiBold.ttf */,
+				96D78AB5372F4D3DBDEA3B2D /* Urbanist-Thin.ttf */,
+				48121E25CB8E454591F0F97D /* LibreBarcode128Text-Regular.ttf */,
+				236E573C9BF947D68728DA8C /* Manrope-Bold.ttf */,
+				C65DED9ED4B6421C9405F4DB /* Manrope-ExtraBold.ttf */,
+				2998503DA0914F7ABB8F0B5A /* Manrope-ExtraLight.ttf */,
+				DCE937FBFE0A4F9B8A650211 /* Manrope-Light.ttf */,
+				39D1C4396B0A4BC3A906FE18 /* Manrope-Medium.ttf */,
+				504890E23EEA4B4AB7C888D4 /* Manrope-Regular.ttf */,
+				39E492D5D7464B49A0FE12DC /* Manrope-SemiBold.ttf */,
+				71190D514F614487818FE63C /* Poppins-Bold.ttf */,
+				5946D4B3D29B40BE97AF5281 /* Poppins-ExtraBold.ttf */,
+				BFBF89AC50CD458A95618724 /* Poppins-Light.ttf */,
+				5E7A624F48084650A02F761D /* Poppins-Medium.ttf */,
+				611562B68D8E47A1A084956C /* Poppins-Regular.ttf */,
+				C96E49E985C64055849206BC /* Poppins-SemiBold.ttf */,
+				59D525DA3677457F9E9068C1 /* Poppins-Thin.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -276,14 +321,29 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				F6AC68CC35134C3F87839AD0 /* Raleway-Bold.ttf in Resources */,
-				5C1773E86B904AB5A426783A /* Raleway-ExtraBold.ttf in Resources */,
-				3703E42FDF15409FB796793E /* Raleway-ExtraLight.ttf in Resources */,
-				A2AF2EDFB7B34E9FB27524EA /* Raleway-Light.ttf in Resources */,
-				940F4210D07A4B329721F3A9 /* Raleway-Medium.ttf in Resources */,
-				7D8B0D6D0D184F3392ACAB5A /* Raleway-Regular.ttf in Resources */,
-				9266932FE44E48798495DBC7 /* Raleway-SemiBold.ttf in Resources */,
-				A54CD1EC4ECD485283DCE51E /* Raleway-Thin.ttf in Resources */,
+				2B70BD13018D43F295DDF4A7 /* Urbanist-Bold.ttf in Resources */,
+				F1A9D66232564FB386E1CAB8 /* Urbanist-ExtraBold.ttf in Resources */,
+				1F5060026B9641CD9FDD671B /* Urbanist-ExtraLight.ttf in Resources */,
+				502FCDEE35114EE181694E31 /* Urbanist-Light.ttf in Resources */,
+				F792DB4F7207405FA31F6BC3 /* Urbanist-Medium.ttf in Resources */,
+				C5144FC7AC924344B091F44F /* Urbanist-Regular.ttf in Resources */,
+				A26F2A53F781427BB2ADF66F /* Urbanist-SemiBold.ttf in Resources */,
+				AD757EBF78ED4A87BB85BC88 /* Urbanist-Thin.ttf in Resources */,
+				BC9169A5B2064942BE66D45B /* LibreBarcode128Text-Regular.ttf in Resources */,
+				DD4EFDD317E74906BD3496D8 /* Manrope-Bold.ttf in Resources */,
+				54078D8CD4CA4DB4A53D2E6A /* Manrope-ExtraBold.ttf in Resources */,
+				5EA6A4B5BEC54486AEB49CA6 /* Manrope-ExtraLight.ttf in Resources */,
+				C1FB0C339BB44FD9A78B0F3F /* Manrope-Light.ttf in Resources */,
+				70BD0E683F144F08A44F655A /* Manrope-Medium.ttf in Resources */,
+				AF28B99CA74C4F18B4131AE4 /* Manrope-Regular.ttf in Resources */,
+				D118ED7FBDF24127AB9A39B9 /* Manrope-SemiBold.ttf in Resources */,
+				12750B1A0526467A95F4A9FA /* Poppins-Bold.ttf in Resources */,
+				987B146B33F445FBBF5D7E99 /* Poppins-ExtraBold.ttf in Resources */,
+				D5079ADD472A4D43B722DF1E /* Poppins-Light.ttf in Resources */,
+				405CD6EC7B354F658C7C530A /* Poppins-Medium.ttf in Resources */,
+				34AF33E2189841B99FEA4831 /* Poppins-Regular.ttf in Resources */,
+				1DB7B2E3FF204F89B8577254 /* Poppins-SemiBold.ttf in Resources */,
+				44517062114C4447A20C89E4 /* Poppins-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
