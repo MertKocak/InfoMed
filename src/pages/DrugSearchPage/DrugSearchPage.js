@@ -7,7 +7,6 @@ import SearchBar from '../../components/SearchBar';
 import { NavigationContainer, useNavigation, useRoute } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import InfoPage from '../InfoPage';
-import BottomNavigator from '../../components/BottomNavigator';
 import { withNavigation } from "react-navigation";
 import Toast from 'react-native-toast-message';
 

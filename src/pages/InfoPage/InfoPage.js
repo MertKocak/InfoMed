@@ -126,13 +126,13 @@ const InfoPage = ({ route, navigation }) => {
                         <Text style={{
                             marginTop: 8,
                             color: colors.primaryColor,
-                            fontSize: 14,
+                            fontSize: 13,
                             fontFamily: 'Manrope-SemiBold',
                         }}>Etken Madde: </Text>
                         <Text style={{
                             marginTop: 8,
                             color: "#191919",
-                            fontSize: 14,
+                            fontSize: 13,
                             fontFamily: 'Manrope-Regular',
                         }}>{etkenmadde}</Text>
                     </View>

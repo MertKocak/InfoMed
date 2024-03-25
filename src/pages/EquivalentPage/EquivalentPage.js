@@ -70,9 +70,9 @@ const EquivalentPage = ({ navigation }) => {
                         Muadil İlaç/İlaçlar:
                     </Text>
                     {isOk ? <View style={{ flexDirection: "column", justifyContent: 'center', alignItems: 'center' }}>
-                        <Image style={{ tintColor: colors.primaryColor, marginTop: 40, height: 28, width: 28 }} source={require("../../../assets/icons/foundError.png")} />
-                        <Text style={{ fontFamily: "Manrope-Medium", alignSelf: 'center', textAlign: 'center', borderRadius: 12, marginLeft: 12, marginRight: 12, marginTop: 12, fontSize: 12, color: colors.primaryColor }} >Aradığınız ilaç için uygun muadil ilaç bulunamadı.</Text>
-                        <Text style={{ fontFamily: "Manrope-Medium", alignSelf: 'center', textAlign: 'center', borderRadius: 12, marginLeft: 12, marginRight: 12, marginTop: 0, fontSize: 12, color: colors.primaryColor }} >Lütfen ilaç ismini doğru yazdığınızdan emin olunuz.</Text>
+                        <Image style={{ tintColor: colors.primaryColor, marginTop: 36, height: 22, width: 22 }} source={require("../../../assets/icons/foundError.png")} />
+                        <Text style={{ fontFamily: "Manrope-SemiBold", alignSelf: 'center', textAlign: 'center', borderRadius: 12, marginLeft: 48, marginRight: 48, marginTop: 12, fontSize: 11, color: colors.primaryColor }} >Aradığınız ilaç için uygun muadil ilaç bulunamadı.</Text>
+                        <Text style={{ fontFamily: "Manrope-Light", alignSelf: 'center', textAlign: 'center', borderRadius: 12, marginLeft: 48, marginRight: 48, marginTop: 4, fontSize: 11, color: colors.primaryColor }} >Lütfen ilaç ismini doğru yazdığınızdan emin olunuz.</Text>
                     </View>
                         : <FlatList
                             contentContainerStyle={{ paddingBottom: 12 }}

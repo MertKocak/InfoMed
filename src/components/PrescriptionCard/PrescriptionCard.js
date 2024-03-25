@@ -27,13 +27,13 @@ const PrescriptionCard = ({ data, onPress }) => {
     console.log(date);
 
     const showToast = (title) => {
-        ToastAndroid.show(title + "için hatırlatıcı kaydedildi", ToastAndroid.SHORT);
+        ToastAndroid.show("Hatırlatıcı kaydedildi: " + title, ToastAndroid.SHORT);
       };
 
     const setNotification = (title, message) => {
         setModalVisible(!modalVisible);
         Notifications.schduleNotification(date, title, message);
-        showToast(title);
+        showToast(message);
     };
 
     const openDatepicker = () => {

@@ -38,7 +38,7 @@ export default function (state = initialState, action) {
                 return state;
             }
             case 'REMOVE_PRESCRIPTION':
-                showToast("İlaç reçetenizden silindi.");
+                showToast("İlaç reçetenizden silindi ve hatırlatıcı iptal edildi.");
             return {
                 ...state, prescriptionList: [
                     ...state.prescriptionList.filter(drug => drug !== action.payload.drug),

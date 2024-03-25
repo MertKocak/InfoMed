@@ -24,7 +24,7 @@ export default StyleSheet.create({
         paddingRight: 8,
         marginBottom: -12,
         flex: 1,
-        justifyContent: "center",
+        justifyContent: "space-evenly",
         flexDirection: "column",
     },
     title: {
@@ -57,18 +57,18 @@ export default StyleSheet.create({
         marginTop: 6,
         marginBottom: 2,
         color: colors.primaryColor,
-        fontSize: 14,
+        fontSize: 13,
         fontFamily: 'Manrope-SemiBold',
     },
     subtitle2: {
         marginTop: 8,
         color: colors.primaryColor,
-        fontSize: 14,
+        fontSize: 13,
         fontFamily: 'Manrope-Medium',
     },
     contents: {
         color: "#191919",
-        fontSize: 14,
+        fontSize: 13,
         fontFamily: 'Manrope-Regular',
     },
     contents2: {
