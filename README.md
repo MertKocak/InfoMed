@@ -1,2 +1,2 @@
 # InfoMed
- thesis
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ BİLGİSAYAR MÜHENDİSLİĞİ BÖLÜMÜ BİTİRME PROJESİ TEZİM
