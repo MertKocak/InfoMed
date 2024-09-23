@@ -1,5 +1,7 @@
 # InfoMed
-MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ BİLGİSAYAR MÜHENDİSLİĞİ BÖLÜMÜ BİTİRME TEZİM
+Mühendislik ve Doğa Bilimleri Fakültesi Bilgisayar Mühendisliği Bölümü Bitirme Tezim
+
+Kullanım videsu: **https://drive.google.com/file/d/1o-UgJghzC8oC5mdOA8DJ-wOaSKNybHTx/view?usp=sharing**
 
 ![1](https://github.com/user-attachments/assets/a35b35e1-c233-451a-a8ca-1b78e8aa2257)
 ![2](https://github.com/user-attachments/assets/0182a3b6-6e30-426b-942e-6aa91177dea3)
